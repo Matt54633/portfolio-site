@@ -4,6 +4,8 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        'light-blue': 'hsl(210, 80%, 98%)',
+        'dark-blue': 'hsl(210, 100%, 10%)',
         'primary-blue': '#3E7FFF',
         'placeholder-grey': 'hsla(0, 0%, 78%, 0.682)',
         'light-grey': '#444444',

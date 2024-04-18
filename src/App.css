@@ -1,22 +1,41 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,701,501,401,901,400&display=swap');
 
-/* ./src/styles/fonts.css */
-@font-face {
-  font-family: 'Satoshi';
-  src: url('./fonts/Satoshi-Variable.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
+:root {
+  --small-font-size: clamp(0.6rem, 0.8vw + 0.8rem, 1rem);
+  --nav-font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
+  --medium-font-size: clamp(1.2rem, 1.5vw + 1.5rem, 1.9rem);
+  --large-font-size: clamp(2rem, 2.75vw + 2.75rem, 4rem);
 }
 
 * {
   font-family: 'Satoshi', sans-serif;
+  box-sizing: border-box;
   -webkit-tap-highlight-color: transparent;
 }
 
 html {
-  margin: 0px;
-  padding: 0px;
-  background-color: theme('colors.dark-grey');
+  -webkit-text-size-adjust: 100%;
+  -moz-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+  background: theme('colors.dark-grey');
+  display: flex;
+  scroll-behavior: smooth;
+  justify-content: center;
+}
+
+body {
+  margin: 1rem 0.75rem;
+  padding: 0;
+  width: min(100%, 1000px);
+  font-weight: 500;
+  font-size: var(--small-font-size);
+  color: theme('colors.light-blue');
+  -webkit-tap-highlight-color: transparent;
+}
+
+a {
+  text-decoration: none;
 }
