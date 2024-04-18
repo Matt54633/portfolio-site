@@ -1,5 +1,30 @@
 {
   "projects": {
     "default": "portfolio-1fec0"
-  }
+  },
+  "targets": {
+    "portfolio-1fec0": {
+      "hosting": {
+        "portfolio-1fec0": [
+          "portfolio-1fec0"
+        ],
+        "54633-weather": [
+          "54633-weather"
+        ],
+        "54633-notes": [
+          "54633-notes"
+        ],
+        "54633-gradients": [
+          "54633-gradients"
+        ],
+        "54633-portal": [
+          "54633-portal"
+        ],
+        "54633-play": [
+          "54633-play"
+        ]
+      }
+    }
+  },
+  "etags": {}
 }
