@@ -1,7 +1,12 @@
+import Navbar from "../components/navbar";
+import Footer from "../components/footer";
+
 const CV = () => {
   return (
     <div>
-      <h1>CV</h1>
+      <Navbar />
+
+      <Footer />
     </div>
   );
 };

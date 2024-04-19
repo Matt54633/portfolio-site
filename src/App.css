@@ -30,12 +30,21 @@ body {
   margin: 1rem 0.75rem;
   padding: 0;
   width: min(100%, 1000px);
-  font-weight: 500;
-  font-size: var(--small-font-size);
   color: theme('colors.light-blue');
   -webkit-tap-highlight-color: transparent;
 }
 
 a {
   text-decoration: none;
+}
+
+nav {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px) contrast(90%);
+}
+
+@media (max-width: 850px) {
+  body {
+    margin: 1.2rem;
+  }
 }
