@@ -27,8 +27,7 @@ html {
 }
 
 body {
-  margin: 1rem 0.75rem;
-  padding: 0;
+  padding: 1rem 0.75rem;
   width: min(100%, 1000px);
   color: theme('colors.light-blue');
   -webkit-tap-highlight-color: transparent;
@@ -50,6 +49,6 @@ nav {
 
 @media (max-width: 850px) {
   body {
-    margin: 1.2rem;
+    padding: 1rem;
   }
 }
