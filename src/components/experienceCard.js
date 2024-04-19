@@ -1,6 +1,6 @@
 const ExperienceCard = ({ company, jobTitle, datePeriod, icon, children }) => {
   return (
-    <div className="flex w-full gap-4 rounded-2xl border-2 border-transparent bg-medium-grey px-4 py-3.5 transition hover:border-light-grey">
+    <div className="flex flex-col w-full gap-4 rounded-2xl border-2 border-transparent bg-medium-grey px-4 py-3.5 transition hover:border-light-grey">
       <div className="flex flex-row items-center gap-4">
         <div>
           <img
