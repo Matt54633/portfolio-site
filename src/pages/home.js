@@ -40,15 +40,32 @@ const Home = () => {
       <div ref={skillsRef}>
         <Section title="Skills">
           <SkillList
-            skills={["HTML", "CSS", "JS", "React", "Swift", "Python", "SQL", "AWS"]}
+            skills={[
+              "HTML",
+              "CSS",
+              "JS",
+              "Node.js",
+              "React",
+              "Swift",
+              "Python",
+              "Django",
+              "SQL",
+              "Terraform",
+              "AWS",
+              "Firebase"
+            ]}
             colours={[
               "primary-blue",
               "primary-blue",
               "pink",
               "pink",
+              "pink",
+              "orange",
               "orange",
               "orange",
               "green",
+              "green",
+              "red",
               "red"
             ]}
           />
@@ -122,7 +139,7 @@ const Home = () => {
               href={"https://www.linkedin.com/in/matt-sullivan-506490191/"}
             />
 
-            <ContactCard icon={"email.svg"} href={"mailto:matt@matt54633.com"} />
+            <ContactCard icon={"email.svg"} href={"mailto:msportfolio26@gmail.com"} />
           </div>
         </Section>
       </div>

@@ -25,15 +25,32 @@ const CV = () => {
 
       <Section title="Skills">
         <SkillList
-          skills={["HTML", "CSS", "JS", "React", "Swift", "Python", "SQL", "AWS"]}
+          skills={[
+            "HTML",
+            "CSS",
+            "JS",
+            "Node.js",
+            "React",
+            "Swift",
+            "Python",
+            "Django",
+            "SQL",
+            "Terraform",
+            "AWS",
+            "Firebase"
+          ]}
           colours={[
             "primary-blue",
             "primary-blue",
             "pink",
             "pink",
+            "pink",
+            "orange",
             "orange",
             "orange",
             "green",
+            "green",
+            "red",
             "red"
           ]}
         />

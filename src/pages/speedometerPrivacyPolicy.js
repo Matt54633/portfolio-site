@@ -356,7 +356,7 @@ const SpeedometerPrivacyPolicy = () => {
         <h2>Contact Us</h2>
         <p>If you have any questions about this Privacy Policy, You can contact us:</p>
         <ul>
-          <li>By email: matt@matt54633.com</li>
+          <li>By email: msportfolio26@gmail.com</li>
         </ul>
       </div>
 
