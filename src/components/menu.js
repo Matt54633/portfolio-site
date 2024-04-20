@@ -41,7 +41,7 @@ const Menu = ({ refs }) => {
   };
 
   return (
-    <div className="menu backdrop-blur[12px] backdrop-contrast-90 animate-fadeIn fixed bottom-0  z-10 mb-4 flex gap-1.5 rounded-xl border border-light-grey bg-medium-grey p-1 ">
+    <div className="menu backdrop-blur[12px] backdrop-contrast-90 animate-fadeIn fixed bottom-0  z-10 mb-5 flex gap-1.5 rounded-xl border border-light-grey bg-medium-grey p-1 ">
       {" "}
       <a
         id="menuAbout"
