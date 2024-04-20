@@ -3,13 +3,6 @@
 @import 'tailwindcss/utilities';
 @import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,701,501,401,901,400&display=swap');
 
-:root {
-  --small-font-size: clamp(0.6rem, 0.8vw + 0.8rem, 1rem);
-  --nav-font-size: clamp(1rem, 1vw + 1rem, 1.3rem);
-  --medium-font-size: clamp(1.2rem, 1.5vw + 1.5rem, 1.9rem);
-  --large-font-size: clamp(2rem, 2.75vw + 2.75rem, 4rem);
-}
-
 * {
   font-family: 'Satoshi', sans-serif;
   box-sizing: border-box;
@@ -42,9 +35,14 @@ nav {
   -webkit-backdrop-filter: blur(12px) contrast(90%);
 }
 
-.backgroundColour {
-  background: url(../public/spanBG.svg) no-repeat bottom/contain content-box;
-  padding: 0.25rem;
+.menu {
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px) contrast(90%);
+  box-shadow: 0px 0px 5px theme('colors.shadow-grey');
+}
+
+.menuLink {
+  box-shadow: 0px 0px 5px theme('colors.shadow-grey');
 }
 
 @media (max-width: 850px) {

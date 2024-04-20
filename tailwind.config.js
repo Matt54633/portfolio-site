@@ -3,6 +3,9 @@ module.exports = {
   content: ["./src/**/*.{js,jsx,ts,tsx}"],
   theme: {
     extend: {
+      backgroundImage: {
+        'spanBG': "url('../public/spanBG.svg')",
+      },
       colors: {
         'light-blue': 'hsl(210, 80%, 98%)',
         'dark-blue': 'hsl(210, 100%, 10%)',
