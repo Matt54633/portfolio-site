@@ -1,0 +1,482 @@
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,701,501,401,901,400&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 0px;
+    height: 8px;
+}
+ ::-webkit-scrollbar-track {
+    background: none;
+}
+ ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 20px;
+}
+ ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.5);
+}
+.fadeUp {
+    opacity: 0;
+    transition: all 0.4s;
+    transform: translateY(100%);
+}
+.fadeMiddle {
+    opacity: 0;
+    transform: scale(0);
+    transition: all 0.2s;
+}
+.fadeUpShow {
+    opacity: 1;
+    transform: translateY(0);
+}
+.fadeMiddleShow {
+    opacity: 1;
+    transform: scale(1);
+}
+ :root {
+    background-color: #601ce9;
+    --large-font-size: clamp(1.5rem, 2vw + 1.5rem, 3rem);
+    --medium-font-size: clamp(1rem, 1vw + 0.7rem, 1.5rem);
+    --small-font-size: clamp(0.9rem, 1vw + 0.3rem, 1.1rem);
+    --tiny-font-size: clamp(0.8rem, 1vw + 0.1rem, 0.9rem);
+    --transparent-background : rgba(255, 255, 255, 0.25);
+    --white : #eeeeee;
+}
+html {
+    background: -webkit-linear-gradient(#601ce9, #8E2DE2);
+    background: linear-gradient(#601ce9, #8E2DE2);
+    color: var(--white);
+    -webkit-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -ms-text-size-adjust: 100%;
+    min-height: 100%;
+    font-family: 'Satoshi', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+body {
+    margin: 0 8vw 0 8vw;
+    width: min(100%, 1200px);
+    padding: 0;
+    -webkit-tap-highlight-color: transparent;
+}
+#loader {
+    width: 100%;
+    height: 100svh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#loadingCircle {
+    width: 4rem;
+    height: auto;
+}
+.glass {
+    background: rgba(255, 255, 255, 0.2);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    backdrop-filter: blur(5px);
+    -webkit-backdrop-filter: blur(5px);
+    /* border: 2px solid rgba(255, 255, 255, 0.3); */
+}
+.flexContainer {
+    display: flex;
+    align-items: center;
+    gap: 0.6rem;
+}
+.flexSearch {
+    justify-content: space-around;
+    margin: 0 0.75rem;
+}
+.weatherDetail {
+    width: max-content;
+    border-radius: 1.3rem;
+    margin: 1.5rem 0 0 0;
+    padding: 1.25rem;
+}
+.searchWeatherDetail {
+    margin: 0;
+}
+.weatherDetailLocation {
+    font-size: var(--medium-font-size);
+    font-weight: 400;
+    margin: 0;
+}
+.weatherDetailTemp {
+    margin: 0;
+    font-size: var(--large-font-size);
+    font-weight: 500;
+}
+.weatherDetailConditions, .weatherDetailHighLow {
+    font-size: var(--small-font-size);
+    margin: 0.1rem;
+    font-weight: 400;
+}
+.weatherDetailIcon {
+    margin: 0;
+    width: clamp(1rem, 1.3vw + 1rem, 2rem);
+}
+.flexAlerts {
+    display: flex;
+    gap: 1.5rem;
+    width: 100%;
+}
+#rainDisplay, #alertsDisplay {
+    display: none;
+    margin: 1.5rem 0 0 0;
+    border-radius: 1.3rem;
+    width: 100%;
+}
+#rainDisplayTitle, #alertsDisplayTitle {
+    font-size: var(--small-font-size);
+    font-weight: 600;
+    padding: 1rem 1rem 0.75rem 1rem;
+    margin: 0;
+}
+#alertsDisplayInfo {
+    padding: 0.3rem 1rem 1rem 1rem;
+    font-size: var(--tiny-font-size);
+    margin: 0;
+}
+#rainChart {
+    border-radius: 0px;
+}
+#rainChartContainer {
+    padding: 0.2rem 0;
+    height: 3.25rem;
+    margin: 0 1rem;
+}
+#rainDisplayLabels {
+    padding: 0;
+    border-top: 3.5px solid rgba(255, 255, 255, 0.2);
+    margin: 0 1rem;
+    align-items: baseline;
+    display: flex;
+    justify-content: space-between;
+}
+.now, .thirty, .sixty {
+    font-size: var(--tiny-font-size);
+    margin: 0.2rem 0 0.5rem 0;
+}
+.now {
+    text-align: left;
+}
+.thirty {
+    text-align: center;
+}
+.sixty {
+    text-align: right;
+}
+.forecast {
+    padding: 0;
+    grid-auto-flow: column;
+    overflow-y: auto;
+    margin: 1.5rem 0 0 0;
+    border-radius: 1.3rem;
+    display: flex;
+    justify-content: space-around;
+}
+.forecast li {
+    cursor: pointer;
+    border-radius: 1.3rem;
+    transition: 0.15s;
+    text-align: center;
+    list-style: none;
+    width: 100%;
+}
+.forecast li:hover {
+    background: rgba(255, 255, 255, 0.15);
+}
+.forecast h2 {
+    margin: 0.75rem 0;
+    font-size: var(--small-font-size);
+    font-weight: 600;
+}
+.forecast h3 {
+    margin: 0.5rem 0 0.75rem 0 ;
+    font-size: calc(var(--small-font-size) * 0.9);
+    font-weight: 400;
+}
+.daily h3 {
+    line-height: 1.4rem;
+}
+.forecast img {
+    width: clamp(1rem, 1.3vw + 1rem, 2rem);
+}
+.flexForecast {
+    display: flex;
+    gap: 1.5rem;
+}
+.forecasts {
+    width: 75%;
+}
+.map {
+    width: 25%;
+    height: auto;
+    margin: 1.5rem 0 0 0;
+}
+canvas {
+    border-radius: 1.3rem;
+}
+#searchBar {
+    margin: 1.5rem 0 0 0;
+    border-radius: 300px;
+}
+#searchBar:hover {
+    background: var(--transparent-background);
+}
+input {
+    font-family: 'Satoshi';
+    font-weight: 400;
+    border: none;
+    width: 92%;
+    background: rgba(255, 255, 255, 0);
+    outline: none;
+    font-size: var(--small-font-size);
+    color: #eeeeee;
+    padding: 0.6rem 0;
+}
+::placeholder {
+    color: #eeeeee;
+}
+#searchLogo {
+    width: 1.2rem;
+    cursor: pointer;
+}
+#search {
+    display: none;
+    /* border: 2.5px solid rgba(255, 255, 255, 0.3); */
+    border-radius: 2.3rem;
+    margin: 1.5rem 0;
+    padding: 1.5rem;
+}
+#closeIcon {
+    position: absolute;
+    right: 1.3rem;
+    transition: 0.1s ease;
+    transform: scale(1.1);
+    cursor: pointer;
+    width: clamp(1rem, 1.2vw + 1rem, 2.2rem);
+}
+#closeIcon:hover {
+    transform: scale(1.2);
+}
+#closeButton {
+    display: none;
+}
+#infoPanel {
+    position: fixed;
+    bottom: 0;
+    background: -webkit-linear-gradient(to right, #4A00E0, #8E2DE2);
+    background: linear-gradient(to right, #4A00E0, #8E2DE2);
+    box-shadow: 0px 0px 20px 10px rgba(76, 76, 76, .45);
+    border-radius: 2rem 2rem 0 0;
+    z-index: 2;
+}
+#closeInfoPanel, #closeButton {
+    margin: 1.5rem 1.5rem 2rem 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    font-size: calc(var(--small-font-size));
+    padding: 0.5rem;
+    color: black;
+    mix-blend-mode: screen;
+    background: rgba(255, 255, 255, 0.6);
+    cursor: pointer;
+    transition: .2s all;
+    border: 2px solid transparent;
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    font-weight: 600;
+}
+#closeInfoPanel:hover, #closeButton:hover {
+    background: rgba(255, 255, 255, 0.2);
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    color: var(--white);
+}
+#infoPanelImg {
+    margin: 1.5rem 1.5rem 0 1.5rem;
+    width: clamp(1rem, 1.3vw + 1rem, 2.2rem);
+}
+#infoPanelTitle {
+    margin: 0.5rem 1.5rem;
+    font-size: var(--medium-font-size);
+    font-weight: 400;
+}
+#infoPanelTemp {
+    margin: 0.5rem 1.5rem;
+    font-size:var(--large-font-size);
+    font-weight: 500;
+}
+#infoPanelInfo {
+    margin: 0.5rem 1.5rem;
+    font-size: calc(var(--tiny-font-size) * 1.1);
+    line-height: 1.6rem;
+}
+#infoPanelBackground {
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 0.2);
+    position: fixed;
+    border-radius: 2rem 2rem 0 0;
+    z-index: -1;
+}
+#footer {
+    margin: 1.5rem 0 0 0;
+    text-align: center;
+}
+#refresh {
+    width: 1.4rem;
+    padding: 1rem;
+    cursor: pointer;
+}
+#footerInfo {
+    margin: 0 0 1.5rem 0;
+    font-size: calc(var(--tiny-font-size) * 0.9);
+    color: rgba(255, 255, 255, 0.75);
+}
+
+@media screen and (orientation: portrait) and (max-width: 850px) {
+    :root {
+        --small-font-size: clamp(1rem, 1vw + 0.9rem, 2rem);
+        --medium-font-size: clamp(1rem, 1vw + 1.5rem, 3rem);
+        --large-font-size: clamp(1rem, 4vw + 4rem, 5rem);
+        --tiny-font-size: clamp(1rem, 1vw + 0.7rem, 1.4rem);
+    }
+    body {
+        margin: 0 5vw;
+    }
+    .weatherDetail {
+        width: 100%;
+        text-align: center;
+        background: none;
+        border: none;
+        box-shadow: none;
+        padding: 0;
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+    }
+    .weatherDetailIcon {
+        width: clamp(2rem, 1.9vw + 1.9rem, 3rem);
+    }
+    .searchWeatherDetail {
+        margin: 0.5rem 0 0 0;
+        text-align: left;
+        backdrop-filter: blur(0px);
+        -webkit-backdrop-filter: blur(0px);
+    }
+    .flexContainer {
+        gap: 0.75rem;
+    }
+    .flexCenter {
+        justify-content: center;
+    }
+    .flexAlerts {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    #rainDisplay, #alertsDisplay {
+        box-sizing: border-box;
+        width: 90vw;
+    }
+    #rainDisplayTitle, #alertsDisplayTitle {
+        margin: 0;
+        text-align: center;
+        padding: 1rem 1rem 0.5rem 1rem;
+    }
+    #alertsDisplayInfo {
+        text-align: center;
+        font-size: var(--tiny-font-size);
+    }
+    .now, .thirty, .sixty {
+        margin: 0.2rem 0 0.5rem 0;
+        font-size: calc(var(--tiny-font-size) * 0.9);
+    }
+    .flexForecast {
+        flex-direction: column;
+        align-items: center;
+        gap: 0;
+    }
+    .forecasts {
+        width: 100%;
+    }
+    .forecast img {
+        width: clamp(1rem, 2vw + 1.5rem, 3rem);
+    }
+    .forecast {
+        display: grid;
+        margin: 1.5rem 5vw;
+        justify-content: revert;
+    }
+    .searchLocationForecast {
+        margin: 1.5rem 0;
+    }
+    #currentHourlyForecast li,
+    #currentDailyForecast li {
+        width: 19.7vw;
+    }
+    #searchHourlyForecast li,
+    #searchDailyForecast li {
+        width: 17.5vw;
+    }
+    .map {
+        height: 11rem;
+        margin: 0 5vw;
+        width: -webkit-fill-available;
+    }
+    .flexSearch {
+        margin: 0 1.2rem;
+    }
+    #searchBar {
+        margin: 1.5rem 5vw;
+    }
+    input {
+        padding: 0.75rem 0 0.75rem 0;
+        font-size: calc(var(--small-font-size) * 1.05);
+    }
+    #search {
+        margin: 1.5rem 5vw;
+        padding: 1.2rem;
+    }
+    .searchFlexContainer {
+        align-items: flex-start;
+    }
+    #searchTemp {
+        font-size: calc(var(--large-font-size) * 0.75);
+    }
+    #closeIcon {
+        display: none;
+    }
+    #closeButton {
+        display: block;
+        width: 100%;
+        padding: 0.5rem 0;
+        margin: 1.5rem 0 0 0;
+        border-radius: 1.3rem;
+        color: #8E2DE2;
+    }
+    #searchMap {
+        margin: 0;
+    }
+    #infoPanel {
+        width: 100%;
+    }
+    #closeInfoPanel {
+        font-size: calc(var(--small-font-size) * 1.1);
+        padding: 0.65rem;
+    }
+    #infoPanelImg {
+        width: clamp(2rem, 2.2vw + 2.2rem, 3rem);
+    }
+    #infoPanelTemp {
+        font-size: calc(var(--medium-font-size) * 2);
+    }
+}
+/* no hover */
+@media (hover: none) {
+    #searchBar:hover {
+        background: rgba(255, 255, 255, 0.20);
+    }
+    .forecast li:hover {
+        background: none;
+    }
+}

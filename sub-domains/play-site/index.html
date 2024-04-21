@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>play.matt54633</title>
+    <meta name="description" content="A fun take on my traditional portfolio!">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="theme-color" content="#ffffff">
+    <link rel="apple-touch-icon" sizes="180x180" href="\files\apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="\files\favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="\files\favicon-16x16.png">
+    <link rel="mask-icon" href="\files\safari-pinned-tab.svg" color="#2a4277">
+    <link rel="stylesheet" href="\files\landing-page-style.css" type="text/css" />
+</head>
+<body>
+    <div id="canvas_container">
+      <canvas id="canvas3d"></canvas>
+      <img id="orbit_img" alt="Camera Orbit Icon" src="\files\images\orbit.svg"/>
+    </div>
+    <h1 id="title" class="canvas_title">play.matt54633</h1>
+    <h1 id="redirect" class="canvas_title"><a href="/files/home.html">Visit Site!</a></h1>
+    <script async src="https://unpkg.com/es-module-shims@1.3.6/dist/es-module-shims.js"></script>
+    <script type="importmap">
+      {
+        "imports": {
+          "@splinetool/runtime": "https://unpkg.com/@splinetool/runtime@0.9.210/build/runtime.js"
+        }
+      }
+    </script>
+    <script type="module" src="\files\3d.js"></script>
+</body>
+</html>

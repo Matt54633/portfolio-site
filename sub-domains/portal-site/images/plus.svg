@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg width="100%" height="100%" viewBox="0 0 800 800" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;">
+    <g transform="matrix(1,0,0,1,-800,-2494)">
+        <g transform="matrix(1,0,0,2.00972,0,2.28479e-13)">
+            <g id="add-svgrepo-com.svg" transform="matrix(1,0,0,0.497581,1200,1440)">
+                <g transform="matrix(1,0,0,1,-400,-400)">
+                    <g transform="matrix(1.12643,0,0,1.11143,-50.5714,-44.5714)">
+                        <g id="SVGRepo_iconCarrier">
+                            <path d="M433.333,200C433.333,181.59 418.41,166.667 400,166.667C381.59,166.667 366.667,181.59 366.667,200L366.667,366.667L200,366.667C181.59,366.667 166.667,381.59 166.667,400C166.667,418.41 181.59,433.333 200,433.333L366.667,433.333L366.667,600C366.667,618.41 381.59,633.333 400,633.333C418.41,633.333 433.333,618.41 433.333,600L433.333,433.333L600,433.333C618.41,433.333 633.333,418.41 633.333,400C633.333,381.59 618.41,366.667 600,366.667L433.333,366.667L433.333,200Z" style="fill:white;"/>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
