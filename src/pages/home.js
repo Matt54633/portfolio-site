@@ -6,6 +6,7 @@ import Section from "../components/section";
 import SkillList from "../components/skillList";
 import ExperienceCard from "../components/experienceCard";
 import WorkCard from "../components/workCard";
+import SubDomainCard from "../components/subDomainCard";
 import ContactCard from "../components/contactCard";
 import React, { useRef } from "react";
 
@@ -93,7 +94,7 @@ const Home = () => {
 
       <div ref={workRef}>
         <Section title="My Work">
-          <div className="mt-7 grid gap-4 lg:grid-cols-2">
+          <div className="mt-7 grid gap-4 lg:grid-cols-3">
             <WorkCard
               image="weather.jpeg"
               title="54633°"
@@ -104,12 +105,9 @@ const Home = () => {
             <WorkCard
               image="personal-bests.jpeg"
               title="Personal Bests"
-              description="Progress tracking iOS app for tracking weight lifting personal bests. Built using Swift and the SwiftData framework."
+              description="Progress tracking iOS app for tracking weight lifting. Built using Swift and the SwiftData framework."
               href="https://apps.apple.com/gb/app/personal-bests/id6468835590/">
-              <SkillList
-                skills={["Swift", "SwiftUI", "SwiftData"]}
-                colours={["pink", "pink", "red"]}
-              />
+              <SkillList skills={["Swift", "SwiftUI"]} colours={["pink", "pink"]} />
             </WorkCard>
             <WorkCard
               image="mcmsw.svg"
@@ -124,9 +122,30 @@ const Home = () => {
             <WorkCard
               image="portal.svg"
               title="Booking Portal"
-              description="Booking management template. Utilises a Django backend and customisable front-end.">
+              description="Booking management template. Utilises a Django backend and customisable front-end."
+              href="https://portal.matt54633.com/">
               <SkillList skills={["Django", "SQL"]} colours={["orange", "red"]} />
             </WorkCard>
+          </div>
+        </Section>
+
+        <Section title="My Sites">
+          <div className="mt-7 grid gap-4 lg:grid-cols-3">
+            <SubDomainCard
+              image="gradient.svg"
+              title="Gradient Generator"
+              href="https://gradients.matt54633.com/"
+            />
+
+            <SubDomainCard image="sun.svg" title="Weather" href="https://weather.matt54633.com/" />
+
+            <SubDomainCard image="note.svg" title="Notes" href="https://notes.matt54633.com/" />
+
+            <SubDomainCard
+              image="play.svg"
+              title="Alternate Portfolio"
+              href="https://play.matt54633.com/"
+            />
           </div>
         </Section>
       </div>

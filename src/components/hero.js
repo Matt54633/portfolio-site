@@ -13,7 +13,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <PrimaryButton buttonName="View my CV" destination={"/cv"} />
+      <PrimaryButton buttonName="View my CV" destination={"/cv"} target={"_self"} />
     </section>
   );
 };

@@ -13,7 +13,7 @@
     },
     {
       "target": "54633-gradients",
-      "public": "sub-domains/gradient-generator",
+      "public": "sub-domains/gradients",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
@@ -35,7 +35,7 @@
     },
     {
       "target": "54633-notes",
-      "public": "sub-domains/notes-app",
+      "public": "sub-domains/notes",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
