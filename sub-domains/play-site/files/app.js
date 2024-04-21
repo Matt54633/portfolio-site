@@ -20,6 +20,12 @@ function birthday() {
     let current_date = new Date();
     let current_year = current_date.getFullYear();
     let birthday_date = new Date(current_year, 9, 30);
+
+    // If the current date is after the birthday date, calculate the days until the birthday in the next year
+    if (current_date > birthday_date) {
+        birthday_date.setFullYear(current_year + 1);
+    }
+
     let difference_between_dates = birthday_date.getTime() - current_date.getTime();
     let days_until_birthday = Math.ceil(difference_between_dates / (1000 * 3600 * 24));
     document.getElementById('birthday_para').innerText = days_until_birthday + " days to go!";
@@ -36,7 +42,7 @@ fetch(`https://api.openweathermap.org/data/2.5/weather?q=${searchLocation}&appid
     const { main, weather } = data;
     document.getElementById('weather_temp').innerText = Math.floor(main.temp) + '°'
     document.getElementById('weather_para').innerText = capitaliseConditions(weather[0].description) + ' / Yeovil';
-    document.getElementById('weather_img').src = `https://matt54633.com/weather/weatherIcons/${weather[0]["icon"]}.svg`;
+    document.getElementById('weather_img').src = `https://weather.matt54633.com/images/${weather[0]["icon"]}.svg`;
 });
 // capitalise the weather conditions coming from the api
 function capitaliseConditions(conditionsType) {

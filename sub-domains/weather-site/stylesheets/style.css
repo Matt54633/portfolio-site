@@ -1,5 +1,4 @@
-@import url('https://api.fontshare.com/v2/css?f[]=satoshi@900,700,500,701,501,401,901,400&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
 
 ::-webkit-scrollbar {
     width: 0px;
@@ -50,7 +49,7 @@ html {
     -moz-text-size-adjust: 100%;
     -ms-text-size-adjust: 100%;
     min-height: 100%;
-    font-family: 'Satoshi', sans-serif;
+    font-family: 'Plus Jakarta Sans', sans-serif;
     display: flex;
     justify-content: center;
 }
@@ -225,7 +224,7 @@ canvas {
     background: var(--transparent-background);
 }
 input {
-    font-family: 'Satoshi';
+    font-family: 'Plus Jakarta Sans';
     font-weight: 400;
     border: none;
     width: 92%;

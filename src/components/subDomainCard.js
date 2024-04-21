@@ -3,11 +3,11 @@ const SubDomainCard = ({ image, title, href }) => {
       <a href={href} target="blank">
         <div className="flex flex-col w-full gap-4 rounded-2xl border-2 border-transparent bg-medium-grey px-4 py-3.5 transition hover:border-light-grey">
           <div className="flex flex-row items-center gap-4">
-            <div>
+            <div className="rounded-full bg-decorator-grey">
               <img
                 src={`/${image}`}
                 alt="Sub Domain Icon"
-                className="h-12 w-12 rounded-full bg-decorator-grey p-[0.6rem]"
+                className="h-12 w-12 p-[0.6rem]"
               />
             </div>
             <div className="text-[1rem] flex-grow">
