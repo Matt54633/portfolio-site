@@ -13,7 +13,7 @@
     },
     {
       "target": "54633-gradients",
-      "public": "sub-domains/gradients",
+      "public": "sub-domains/gradients-site",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
@@ -24,7 +24,7 @@
     },
     {
       "target": "54633-weather",
-      "public": "sub-domains/weather",
+      "public": "sub-domains/weather-site",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
@@ -35,7 +35,7 @@
     },
     {
       "target": "54633-notes",
-      "public": "sub-domains/notes",
+      "public": "sub-domains/notes-site",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
@@ -46,7 +46,7 @@
     },
     {
       "target": "54633-play",
-      "public": "sub-domains/play",
+      "public": "sub-domains/play-site",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {
@@ -57,7 +57,7 @@
     },
     {
       "target": "54633-portal",
-      "public": "sub-domains/portal",
+      "public": "sub-domains/portal-site",
       "ignore": ["firebase.json", "**/.*", "**/node_modules/**"],
       "rewrites": [
         {

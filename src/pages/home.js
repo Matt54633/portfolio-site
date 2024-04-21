@@ -119,13 +119,6 @@ const Home = () => {
                 colours={["primary-blue", "primary-blue", "pink"]}
               />
             </WorkCard>
-            <WorkCard
-              image="portal.svg"
-              title="Booking Portal"
-              description="Booking management template. Utilises a Django backend and customisable front-end."
-              href="https://portal.matt54633.com/">
-              <SkillList skills={["Django", "SQL"]} colours={["orange", "red"]} />
-            </WorkCard>
           </div>
         </Section>
 
@@ -145,6 +138,12 @@ const Home = () => {
               image="play.svg"
               title="Alternate Portfolio"
               href="https://play.matt54633.com/"
+            />
+
+            <SubDomainCard
+              image="portal.svg"
+              title="Booking Portal"
+              href="https://portal.matt54633.com/"
             />
           </div>
         </Section>
