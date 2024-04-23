@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { debounce } from "lodash";
 
 const Menu = ({ refs }) => {
-  const { aboutRef, skillsRef, experienceRef, workRef, contactRef } = refs;
+  const { aboutRef, skillsRef, experienceRef, workRef, sitesRef, contactRef } = refs;
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
@@ -11,7 +11,8 @@ const Menu = ({ refs }) => {
       const skillsTop = skillsRef.current.getBoundingClientRect().top + window.scrollY;
       const experienceTop = experienceRef.current.getBoundingClientRect().top + window.scrollY;
       const workTop = workRef.current.getBoundingClientRect().top + window.scrollY;
-      const workBottom = workTop + workRef.current.getBoundingClientRect().height;
+      const sitesTop = sitesRef.current.getBoundingClientRect().top + window.scrollY;
+      const contactTop = contactRef.current.getBoundingClientRect().top + window.scrollY;
 
       if (scrollPosition < skillsTop) {
         setActiveSection("about");
@@ -19,9 +20,15 @@ const Menu = ({ refs }) => {
         setActiveSection("skills");
       } else if (scrollPosition < workTop) {
         setActiveSection("experience");
-      } else if (scrollPosition < workBottom) {
+      } else if (scrollPosition < sitesTop) {
         setActiveSection("work");
-      } else {
+      } else if (scrollPosition < contactTop) {
+        setActiveSection("sites");
+      } else if (scrollPosition > contactTop){
+        setActiveSection("contact");
+      }
+
+      if (window.innerHeight + window.scrollY >= document.body.offsetHeight) {
         setActiveSection("contact");
       }
     }, 10);
@@ -32,7 +39,7 @@ const Menu = ({ refs }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [aboutRef, skillsRef, experienceRef, workRef, contactRef]);
+  }, [aboutRef, skillsRef, experienceRef, workRef, sitesRef, contactRef]);
 
   const scrollToRef = (ref) => {
     const yOffset = -220;
@@ -47,7 +54,7 @@ const Menu = ({ refs }) => {
         id="menuAbout"
         href="#about"
         onClick={() => scrollToRef(aboutRef)}
-        className={`menuLink w-10 h-10 rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
+        className={`menuLink flex h-10 w-10 items-center justify-center rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
           activeSection === "about" ? "bg-light-blue" : ""
         }`}>
         <img alt="Menu" className="h-8 w-8" src="/memoji.PNG" />
@@ -56,7 +63,7 @@ const Menu = ({ refs }) => {
         id="menuSkills"
         href="#skills"
         onClick={() => scrollToRef(skillsRef)}
-        className={`menuLink w-10 h-10 rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
+        className={`menuLink flex h-10 w-10 items-center justify-center rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
           activeSection === "skills" ? "bg-light-blue" : ""
         }`}>
         <img alt="Menu" className="h-8 w-8 mix-blend-difference" src="/skills.svg" />
@@ -65,7 +72,7 @@ const Menu = ({ refs }) => {
         id="menuExperience"
         href="#experience"
         onClick={() => scrollToRef(experienceRef)}
-        className={`menuLink w-10 h-10 rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
+        className={`menuLink flex h-10 w-10 items-center justify-center rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
           activeSection === "experience" ? " bg-light-blue" : ""
         }`}>
         <img alt="Menu" className="h-8 w-8 mix-blend-difference" src="/work.svg" />
@@ -74,19 +81,28 @@ const Menu = ({ refs }) => {
         id="menuWork"
         href="#work"
         onClick={() => scrollToRef(workRef)}
-        className={`menuLink w-10 h-10 rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
+        className={`menuLink flex h-10 w-10 items-center justify-center rounded-lg border-[1px] border-light-grey p-[0.12rem] transition hover:border-light-blue ${
           activeSection === "work" ? " bg-light-blue" : ""
         }`}>
-        <img alt="Menu" className="h-8 w-8 mix-blend-difference" src="/brush.svg" />
+        <img alt="Menu" className="h-10 w-10 mix-blend-difference" src="/tags.svg" />
+      </a>
+      <a
+        id="menuSites"
+        href="#sites"
+        onClick={() => scrollToRef(sitesRef)}
+        className={`menuLink flex h-10 w-10 items-center justify-center rounded-lg border-[1px] border-light-grey p-[0.3rem] transition hover:border-light-blue ${
+          activeSection === "sites" ? " bg-light-blue" : ""
+        }`}>
+        <img alt="Menu" className="h-7 w-7 mix-blend-difference" src="/sites.svg" />
       </a>
       <a
         id="menuContact"
         href="#contact"
         onClick={() => scrollToRef(contactRef)}
-        className={`menuLink w-10 h-10 rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
+        className={`menuLink flex h-10 w-10 items-center justify-center rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
           activeSection === "contact" ? " bg-light-blue" : ""
         }`}>
-        <img alt="Menu" className="h-8 w-8 mix-blend-difference" src="/contact.svg" />
+        <img alt="Menu" className="h-7 w-7 mix-blend-difference" src="/contact.svg" />
       </a>
     </div>
   );

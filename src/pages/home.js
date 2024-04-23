@@ -15,13 +15,14 @@ const Home = () => {
   const skillsRef = useRef(null);
   const experienceRef = useRef(null);
   const workRef = useRef(null);
+  const sitesRef = useRef(null);
   const contactRef = useRef(null);
 
   return (
     <div>
       <Navbar />
       <div className="flex justify-center">
-        <Menu refs={{ aboutRef, skillsRef, experienceRef, workRef, contactRef }} />
+        <Menu refs={{ aboutRef, skillsRef, experienceRef, workRef, sitesRef, contactRef }} />
       </div>
       <div ref={aboutRef}>
         <Hero />
@@ -121,7 +122,9 @@ const Home = () => {
             </WorkCard>
           </div>
         </Section>
+      </div>
 
+      <div ref={sitesRef}>
         <Section title="My Sites">
           <div className="mt-7 grid gap-4 lg:grid-cols-3">
             <SubDomainCard
