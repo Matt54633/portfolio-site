@@ -111,6 +111,20 @@ const Home = () => {
               <SkillList skills={["Swift", "SwiftUI"]} colours={["pink", "pink"]} />
             </WorkCard>
             <WorkCard
+              image="shaker-gradient.jpg"
+              title="Shaker Gradient"
+              description="Shake to Generate! - Gradient generator for iOS. Built using Swift and SwiftUI."
+              href="https://apps.apple.com/gb/app/gradient-shaker/id6499209609">
+              <SkillList skills={["Swift", "SwiftUI"]} colours={["pink", "pink"]} />
+            </WorkCard>
+            <WorkCard
+              image="speed0.jpg"
+              title="SPEED0"
+              description="Route between locations, track average speed and change tracks. Built using Swift and SwiftUI."
+              href="https://apps.apple.com/gb/app/speed0/id6469321016">
+              <SkillList skills={["Swift", "SwiftUI"]} colours={["pink", "pink"]} />
+            </WorkCard>
+            <WorkCard
               image="mcmsw.svg"
               title="MCMSW"
               description="Designed, developed and deployed a brand new website and branding package for a local mechanic."
