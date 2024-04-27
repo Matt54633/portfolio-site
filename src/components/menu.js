@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import { debounce } from "lodash";
 
 const Menu = ({ refs }) => {
-  const { aboutRef, skillsRef, experienceRef, workRef, sitesRef, contactRef } = refs;
+  const { aboutRef, skillsRef, experienceRef, workRef, contactRef } = refs;
   const [activeSection, setActiveSection] = useState("");
 
   useEffect(() => {
@@ -11,20 +11,17 @@ const Menu = ({ refs }) => {
       const skillsTop = skillsRef.current.getBoundingClientRect().top + window.scrollY;
       const experienceTop = experienceRef.current.getBoundingClientRect().top + window.scrollY;
       const workTop = workRef.current.getBoundingClientRect().top + window.scrollY;
-      const sitesTop = sitesRef.current.getBoundingClientRect().top + window.scrollY;
       const contactTop = contactRef.current.getBoundingClientRect().top + window.scrollY;
 
       if (scrollPosition < skillsTop) {
         setActiveSection("about");
-      } else if (scrollPosition < experienceTop) {
+      }  else if (scrollPosition < experienceTop) {
         setActiveSection("skills");
       } else if (scrollPosition < workTop) {
-        setActiveSection("experience");
-      } else if (scrollPosition < sitesTop) {
-        setActiveSection("work");
+          setActiveSection("experience")
       } else if (scrollPosition < contactTop) {
-        setActiveSection("sites");
-      } else if (scrollPosition > contactTop){
+        setActiveSection("work");
+      }  else if (scrollPosition > contactTop){
         setActiveSection("contact");
       }
 
@@ -39,7 +36,8 @@ const Menu = ({ refs }) => {
     return () => {
       window.removeEventListener("scroll", handleScroll);
     };
-  }, [aboutRef, skillsRef, experienceRef, workRef, sitesRef, contactRef]);
+  }, [aboutRef, skillsRef, experienceRef, workRef, contactRef]);
+
 
   const scrollToRef = (ref) => {
     const yOffset = -220;
@@ -84,16 +82,7 @@ const Menu = ({ refs }) => {
         className={`menuLink flex h-10 w-10 items-center justify-center rounded-lg border-[1px] border-light-grey p-[0.12rem] transition hover:border-light-blue ${
           activeSection === "work" ? " bg-light-blue" : ""
         }`}>
-        <img alt="Menu" className="h-10 w-10 mix-blend-difference" src="/tags.svg" />
-      </a>
-      <a
-        id="menuSites"
-        href="#sites"
-        onClick={() => scrollToRef(sitesRef)}
-        className={`menuLink flex h-10 w-10 items-center justify-center rounded-lg border-[1px] border-light-grey p-[0.3rem] transition hover:border-light-blue ${
-          activeSection === "sites" ? " bg-light-blue" : ""
-        }`}>
-        <img alt="Menu" className="h-7 w-7 mix-blend-difference" src="/sites.svg" />
+        <img alt="Menu" className="h-8 w-8 mix-blend-difference" src="/tags.svg" />
       </a>
       <a
         id="menuContact"

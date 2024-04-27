@@ -15,14 +15,13 @@ const Home = () => {
   const skillsRef = useRef(null);
   const experienceRef = useRef(null);
   const workRef = useRef(null);
-  const sitesRef = useRef(null);
   const contactRef = useRef(null);
 
   return (
     <div>
       <Navbar />
       <div className="flex justify-center">
-        <Menu refs={{ aboutRef, skillsRef, experienceRef, workRef, sitesRef, contactRef }} />
+        <Menu refs={{ aboutRef, skillsRef, experienceRef, workRef, contactRef }} />
       </div>
       <div ref={aboutRef}>
         <Hero />
@@ -37,9 +36,9 @@ const Home = () => {
             and web applications.
           </p>
         </Section>
-      </div>
+        </div>
 
-      <div ref={skillsRef}>
+        <div ref={skillsRef}>
         <Section title="Skills">
           <SkillList
             skills={[
@@ -95,36 +94,54 @@ const Home = () => {
 
       <div ref={workRef}>
         <Section title="My Work">
-          <div className="mt-7 grid gap-4 lg:grid-cols-3">
-            <WorkCard
+          <h2 className="font-bold text-[2rem]">Apps</h2>
+          <div className="my-7 grid gap-4 lg:grid-cols-3">
+            {/* <WorkCard
               image="weather.jpeg"
               title="54633°"
               description="Hyperlocal iOS weather app for iPhone & iPad. Built using SwiftUI and Apple Weather API."
               href="https://apps.apple.com/gb/app/54633/id6468419990/">
-              <SkillList skills={["Swift", "SwiftUI"]} colours={["pink", "pink"]} />
-            </WorkCard>
+              <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
+            </WorkCard> */}
             <WorkCard
               image="personal-bests.jpeg"
               title="Personal Bests"
               description="Progress tracking iOS app for tracking weight lifting. Built using Swift and the SwiftData framework."
               href="https://apps.apple.com/gb/app/personal-bests/id6468835590/">
-              <SkillList skills={["Swift", "SwiftUI"]} colours={["pink", "pink"]} />
+              <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
             </WorkCard>
             <WorkCard
               image="shaker-gradient.jpg"
               title="Shaker Gradient"
               description="Shake to Generate! - Gradient generator for iOS. Built using Swift and SwiftUI."
               href="https://apps.apple.com/gb/app/gradient-shaker/id6499209609">
-              <SkillList skills={["Swift", "SwiftUI"]} colours={["pink", "pink"]} />
+              <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
             </WorkCard>
             <WorkCard
               image="speed0.jpg"
               title="SPEED0"
               description="Route between locations, track average speed and change tracks. Built using Swift and SwiftUI."
               href="https://apps.apple.com/gb/app/speed0/id6469321016">
-              <SkillList skills={["Swift", "SwiftUI"]} colours={["pink", "pink"]} />
+              <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
             </WorkCard>
+            </div>
+            <h2 className="font-bold text-[2rem]">Open Source</h2>
+            <div className="my-7 grid gap-4 lg:grid-cols-3">
             <WorkCard
+              image="swtools.png"
+              title="SWTools"
+              description="Swift Package that provides a collection of tools for use in Swift projects."
+              href="https://github.com/matt54633/SWTools">
+              <SkillList
+                skills={["Swift"]}
+                colours={["orange"]}
+              />
+            </WorkCard>
+            
+          </div>
+          <h2 className="font-bold text-[2rem]">Sites</h2>
+          <div className="my-7 grid gap-4 lg:grid-cols-3">
+          <WorkCard
               image="mcmsw.svg"
               title="MCMSW"
               description="Designed, developed and deployed a brand new website and branding package for a local mechanic."
@@ -134,14 +151,8 @@ const Home = () => {
                 colours={["primary-blue", "primary-blue", "pink"]}
               />
             </WorkCard>
-          </div>
-        </Section>
-      </div>
-
-      <div ref={sitesRef}>
-        <Section title="My Sites">
-          <div className="mt-7 grid gap-4 lg:grid-cols-3">
-            <SubDomainCard
+          <div className="gap-4 lg:gap-0 flex flex-col justify-between">
+          <SubDomainCard
               image="gradient.svg"
               title="Gradient Generator"
               href="https://gradients.matt54633.com/"
@@ -162,7 +173,8 @@ const Home = () => {
               title="Booking Portal"
               href="https://portal.matt54633.com/"
             />
-          </div>
+            </div>
+            </div>
         </Section>
       </div>
 
