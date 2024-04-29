@@ -36,9 +36,9 @@ const Home = () => {
             and web applications.
           </p>
         </Section>
-        </div>
+      </div>
 
-        <div ref={skillsRef}>
+      <div ref={skillsRef}>
         <Section title="Skills">
           <SkillList
             skills={[
@@ -94,15 +94,15 @@ const Home = () => {
 
       <div ref={workRef}>
         <Section title="My Work">
-          <h2 className="font-bold text-[2rem]">Apps</h2>
-          <div className="my-7 grid gap-4 lg:grid-cols-3">
-            {/* <WorkCard
+          <h2 className="text-[2rem] font-bold">Apps</h2>
+          <div className="my-7 grid gap-4 md:grid-cols-2 auto-rows-auto">
+            <WorkCard
               image="weather.jpeg"
               title="54633°"
-              description="Hyperlocal iOS weather app for iPhone & iPad. Built using SwiftUI and Apple Weather API."
+              description="Hyperlocal iOS weather app for iOS, iPadOS and MacOS. Built using SwiftUI and the Apple Weather API."
               href="https://apps.apple.com/gb/app/54633/id6468419990/">
               <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
-            </WorkCard> */}
+            </WorkCard>
             <WorkCard
               image="personal-bests.jpeg"
               title="Personal Bests"
@@ -113,7 +113,7 @@ const Home = () => {
             <WorkCard
               image="shaker-gradient.jpg"
               title="Shaker Gradient"
-              description="Shake to Generate! - Gradient generator for iOS. Built using Swift and SwiftUI."
+              description="Shake to Generate! - Gradient generator for iOS. Built using Swift and SwiftUI with iCloud Sync."
               href="https://apps.apple.com/gb/app/gradient-shaker/id6499209609">
               <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
             </WorkCard>
@@ -124,24 +124,20 @@ const Home = () => {
               href="https://apps.apple.com/gb/app/speed0/id6469321016">
               <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
             </WorkCard>
-            </div>
-            <h2 className="font-bold text-[2rem]">Open Source</h2>
-            <div className="my-7 grid gap-4 lg:grid-cols-3">
+          </div>
+          <h2 className="text-[2rem] font-bold">Open Source</h2>
+          <div className="my-7 grid gap-4 md:grid-cols-2">
             <WorkCard
               image="swtools.png"
               title="SWTools"
               description="Swift Package that provides a collection of tools for use in Swift projects."
               href="https://github.com/matt54633/SWTools">
-              <SkillList
-                skills={["Swift"]}
-                colours={["orange"]}
-              />
+              <SkillList skills={["Swift"]} colours={["orange"]} />
             </WorkCard>
-            
           </div>
-          <h2 className="font-bold text-[2rem]">Sites</h2>
-          <div className="my-7 grid gap-4 lg:grid-cols-3">
-          <WorkCard
+          <h2 className="text-[2rem] font-bold">Sites</h2>
+          <div className="my-7 grid gap-4 md:grid-cols-2">
+            <WorkCard
               image="mcmsw.svg"
               title="MCMSW"
               description="Designed, developed and deployed a brand new website and branding package for a local mechanic."
@@ -151,30 +147,34 @@ const Home = () => {
                 colours={["primary-blue", "primary-blue", "pink"]}
               />
             </WorkCard>
-          <div className="gap-4 lg:gap-0 flex flex-col justify-between">
-          <SubDomainCard
-              image="gradient.svg"
-              title="Gradient Generator"
-              href="https://gradients.matt54633.com/"
-            />
+            <div className="flex flex-col justify-between gap-4 lg:gap-0">
+              <SubDomainCard
+                image="gradient.svg"
+                title="Gradient Generator"
+                href="https://gradients.matt54633.com/"
+              />
 
-            <SubDomainCard image="sun.svg" title="Weather" href="https://weather.matt54633.com/" />
+              <SubDomainCard
+                image="sun.svg"
+                title="Weather"
+                href="https://weather.matt54633.com/"
+              />
 
-            <SubDomainCard image="note.svg" title="Notes" href="https://notes.matt54633.com/" />
+              <SubDomainCard image="note.svg" title="Notes" href="https://notes.matt54633.com/" />
 
-            <SubDomainCard
-              image="play.svg"
-              title="Alternate Portfolio"
-              href="https://play.matt54633.com/"
-            />
+              <SubDomainCard
+                image="play.svg"
+                title="Alternate Portfolio"
+                href="https://play.matt54633.com/"
+              />
 
-            <SubDomainCard
-              image="portal.svg"
-              title="Booking Portal"
-              href="https://portal.matt54633.com/"
-            />
+              <SubDomainCard
+                image="portal.svg"
+                title="Booking Portal"
+                href="https://portal.matt54633.com/"
+              />
             </div>
-            </div>
+          </div>
         </Section>
       </div>
 
