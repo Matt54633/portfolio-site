@@ -95,7 +95,7 @@ const Home = () => {
       <div ref={workRef}>
         <Section title="My Work">
           <h2 className="text-[2rem] font-bold">Apps</h2>
-          <div className="my-7 grid gap-4 md:grid-cols-2 auto-rows-auto">
+          <div className="my-7 grid gap-4 md:grid-cols-3 auto-rows-auto">
             <WorkCard
               image="weather.jpeg"
               title="54633°"
@@ -126,7 +126,7 @@ const Home = () => {
             </WorkCard>
           </div>
           <h2 className="text-[2rem] font-bold">Open Source</h2>
-          <div className="my-7 grid gap-4 md:grid-cols-2">
+          <div className="my-7 grid gap-4 md:grid-cols-3">
             <WorkCard
               image="swtools.png"
               title="SWTools"
@@ -136,9 +136,9 @@ const Home = () => {
             </WorkCard>
           </div>
           <h2 className="text-[2rem] font-bold">Sites</h2>
-          <div className="my-7 grid gap-4 md:grid-cols-2">
+          <div className="my-7 grid gap-4 md:grid-cols-3">
             <WorkCard
-              image="mcmsw.svg"
+              image="mcmsw.jpg"
               title="MCMSW"
               description="Designed, developed and deployed a brand new website and branding package for a local mechanic."
               href="https://mobilecarmechanic.net">
@@ -147,7 +147,19 @@ const Home = () => {
                 colours={["primary-blue", "primary-blue", "pink"]}
               />
             </WorkCard>
-            <div className="flex flex-col justify-between gap-4 lg:gap-0">
+            <WorkCard
+              image="notes.jpg"
+              title="Notes Site"
+              description="Responsive note taker developed using TailwindCSS and Supabase authentication and database."
+              href="https://notes.matt54633.com/">
+              <SkillList
+                skills={["HTML", "CSS", "JS"]}
+                colours={["primary-blue", "primary-blue", "pink"]}
+              />
+            </WorkCard>
+
+
+            {/* <div className="flex flex-col justify-between gap-4 lg:gap-0">
               <SubDomainCard
                 image="gradient.svg"
                 title="Gradient Generator"
@@ -173,7 +185,7 @@ const Home = () => {
                 title="Booking Portal"
                 href="https://portal.matt54633.com/"
               />
-            </div>
+            </div> */}
           </div>
         </Section>
       </div>
