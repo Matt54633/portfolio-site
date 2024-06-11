@@ -1,7 +1,7 @@
 const WorkCard = ({ image, title, description, children, href }) => {
   return (
     <a href={href} className="flex" target="blank">
-      <div className="flex flex-row gap-4 rounded-2xl bg-medium-light-grey ring-2 ring-inset ring-transparent transition hover:ring-light-grey">
+      <div className="flex flex-row gap-4 rounded-2xl bg-medium-grey ring-2 ring-inset ring-transparent transition hover:ring-light-grey">
         <div className="flex flex-col items-center gap-2 lg:flex-row">
           <img
             src={`/${image}`}
