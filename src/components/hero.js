@@ -1,9 +1,9 @@
-import PrimaryButton from "./primaryButton";
+// import PrimaryButton from "./primaryButton";
 
 const Hero = () => {
   return (
     <section className="mx-0.5 my-[3.5rem]">
-      <div className="mb-12 flex flex-col  lg:mb-8 lg:flex-row">
+      <div className="mb-12 flex flex-col items-center lg:mb-8 lg:flex-row lg:items-center">
         <h1 className="lg-mb-0 mb-10 w-full text-[5rem] font-[800] leading-none lg:text-[6rem]">
           Hey,<br></br>I'm{" "}
           <span className="content-box bg-spanBG bg-contain bg-bottom bg-no-repeat py-1">Matt</span>
@@ -13,7 +13,7 @@ const Hero = () => {
         </p>
       </div>
 
-      <PrimaryButton buttonName="View my CV" destination={"/cv"} target={"_self"} />
+      {/* <PrimaryButton buttonName="View my CV" destination={"/cv"} target={"_self"} /> */}
     </section>
   );
 };
