@@ -93,7 +93,7 @@ const Home = () => {
 
       <div ref={workRef}>
         <Section title="My Work">
-          <div className="mt-6 flex flex-col gap-4">
+          <div className="mt-6 flex flex-col gap-6">
             <WorkGroupCard title="Apps" image="apps.svg">
               <WorkCard
                 image="weather.jpeg"

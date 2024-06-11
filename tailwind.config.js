@@ -12,7 +12,7 @@ module.exports = {
         'primary-blue': '#3E7FFF',
         'placeholder-grey': 'hsla(0, 0%, 78%, 0.682)',
         'light-grey': '#444444',
-        'medium-light-grey': 'rgba(50, 50, 50, 0.74)',
+        'medium-light-grey': 'rgba(50, 50, 50, 1)',
         'medium-grey': 'rgba(44, 44, 44, 0.74)',
         'dark-grey': 'rgba(0, 0, 0, 0.9)',
         'decorator-grey': '#3e3e3e',
