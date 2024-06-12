@@ -2,17 +2,16 @@
 
 const Hero = () => {
   return (
-    <section className="mx-0.5 my-[3.5rem]">
-      <div className="mb-12 flex flex-col items-center lg:mb-8 lg:flex-row lg:items-center">
-        <h1 className="lg-mb-0 mb-10 w-full text-[5rem] font-[800] leading-none lg:text-[6rem]">
+    <section className="mx-0.5 my-[7.5rem] flex flex-col">
+      <div className="mt-[-2rem] flex flex-col gap-12 md:mt-0">
+        <h1 className="w-full text-[5rem] font-[800] leading-none md:text-[6rem]">
           Hey,<br></br>I'm{" "}
           <span className="content-box bg-spanBG bg-contain bg-bottom bg-no-repeat py-1">Matt</span>
         </h1>
-        <p className="w-full  text-left text-[3.4rem] font-[600] leading-none lg:text-right lg:text-[4rem]">
+        <p className="w-full text-left  text-[2.5rem] leading-none  md:text-[3.4rem] ">
           A software engineer from the UK
         </p>
       </div>
-
       {/* <PrimaryButton buttonName="View my CV" destination={"/cv"} target={"_self"} /> */}
     </section>
   );

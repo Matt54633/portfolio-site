@@ -9,7 +9,7 @@ const WorkCard = ({ image, title, description, children, href }) => {
             className="aspect-[4/3] rounded-t-xl object-cover lg:w-1/4 lg:rounded-bl-xl lg:rounded-tl-xl lg:rounded-tr-none"
           />
           <div className="flex flex-col justify-between gap-1 px-4 py-3.5 text-[1rem]">
-            <h1 className="text-[1.2rem] font-[800]">{title}</h1>
+            <h1 className="text-[1.15rem] font-bold">{title}</h1>
 
             <p className="mb-2 font-medium">{description}</p>
             {children}
