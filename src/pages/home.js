@@ -29,10 +29,10 @@ const Home = () => {
 
         <Section title="About Me">
           <p className="font-medium">
-            Hey! I'm a Software Engineer student based in the UK. With prior experience as both a web developer and IT technician
-            during my stints at QV Systems and Huish MAT, I have developed numerous applications
-            utilising technologies such as NodeJS, Oracle APEX, Python Django, React, Swift and more.
-      
+            Hey! I'm a Software Engineer student based in the UK. With prior experience as both a
+            web developer and IT technician during my stints at QV Systems and Huish MAT, I have
+            developed numerous applications utilising technologies such as NodeJS, Oracle APEX,
+            Python Django, React, Swift and more.
           </p>
         </Section>
       </div>
@@ -191,13 +191,18 @@ const Home = () => {
 
       <div ref={contactRef}>
         <Section title="Contact Me">
-          <div className="flex gap-4">
+          <div className="flex flex-col gap-4 sm:flex-row">
             <ContactCard
               icon={"linkedin.svg"}
+              title={"LinkedIn"}
               href={"https://www.linkedin.com/in/matt-sullivan-506490191/"}
             />
 
-            <ContactCard icon={"email.svg"} href={"mailto:msportfolio26@gmail.com"} />
+            <ContactCard
+              icon={"email.svg"}
+              title={"Email"}
+              href={"mailto:msportfolio26@gmail.com"}
+            />
           </div>
         </Section>
       </div>
