@@ -195,7 +195,7 @@ const Home = () => {
             <ContactCard
               icon={"linkedin.svg"}
               title={"LinkedIn"}
-              href={"https://www.linkedin.com/in/matt-sullivan-506490191/"}
+              href={"https://linkedin.com/in/matthew-james-sullivan"}
             />
 
             <ContactCard
