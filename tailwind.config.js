@@ -4,7 +4,7 @@ module.exports = {
   theme: {
     extend: {
       backgroundImage: {
-        'spanBG': "url('../public/spanBG.svg')",
+        'spanBG': "url('../spanBG.svg')",
       },
       colors: {
         'light-blue': 'hsl(210, 80%, 98%)',
