@@ -1,6 +1,6 @@
 const WorkGroupCard = ({ title, image, children }) => {
   return (
-    <div className="flex flex-col gap-4 rounded-2xl ring-2 ring-light-grey p-4 ">
+    <div className="flex flex-col gap-5">
       <div className="flex flex-row items-center gap-4">
         <img
           src={`/${image}`}
@@ -9,7 +9,7 @@ const WorkGroupCard = ({ title, image, children }) => {
         />
         <h1 className="text-[1.75rem] font-bold">{title}</h1>
       </div>
-      <div className="flex flex-col gap-6 lg:gap-4">{children}</div>
+      <div className="flex flex-col gap-6 lg:gap-5">{children}</div>
     </div>
   );
 };

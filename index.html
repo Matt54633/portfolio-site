@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <!-- Vite handles assets in the public directory differently. Use relative paths directly. -->
+    <link rel="icon" href="/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#191919" />
+    <meta
+      name="description"
+      content="Hi, I'm Matt and this is my portfolio site. Learn more about me and my current projects:"
+    />
+    <!-- Update the paths to use relative paths directly -->
+    <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+    <link rel="icon" sizes="192x192" href="/android-chrome-192x192.png" />
+    <link rel="icon" sizes="512x512" href="/android-chrome-512x512.png" />
+    <!-- The manifest will be correctly linked with a relative path -->
+    <link rel="manifest" href="/manifest.json" />
+    <title>Matt Sullivan</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+    <!-- Vite injects the built scripts automatically. No need to manually include your main.js or main.jsx file here. -->
+    <!-- During development, Vite serves your index.html directly. For production, Vite builds your assets and handles public path automatically. -->
+  </body>
+</html>
