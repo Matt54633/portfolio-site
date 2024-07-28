@@ -7,7 +7,6 @@ import SkillList from "../components/skillList";
 import ExperienceCard from "../components/experienceCard";
 import WorkCard from "../components/workCard";
 import WorkGroupCard from "../components/workGroupCard";
-// import SubDomainCard from "../components/subDomainCard";
 import ContactCard from "../components/contactCard";
 import React, { useRef } from "react";
 
@@ -44,12 +43,13 @@ const Home = () => {
               "HTML",
               "CSS",
               "JS",
-              "Node.js",
               "React",
-              "Swift",
+              "SwiftUI",
+              "Node.js",
               "Python",
               "Django",
               "SQL",
+              "Swift",
               "Terraform",
               "AWS",
               "Firebase"
@@ -57,14 +57,15 @@ const Home = () => {
             colours={[
               "primary-blue",
               "primary-blue",
-              "pink",
-              "pink",
-              "pink",
-              "orange",
-              "orange",
-              "orange",
+              "primary-blue",
+              "primary-blue",
+              "primary-blue",
               "green",
               "green",
+              "green",
+              "green",
+              "orange",
+              "red",
               "red",
               "red"
             ]}
@@ -73,8 +74,8 @@ const Home = () => {
       </div>
 
       <div ref={experienceRef}>
-        <Section title="Experience">
-          <div className="mt-6 grid gap-4 lg:grid-cols-2">
+        <Section title="Career">
+          <div className="grid gap-4 lg:grid-cols-2">
             <ExperienceCard
               jobTitle="Junior Web Developer"
               company="QV Systems"
@@ -92,36 +93,36 @@ const Home = () => {
       </div>
 
       <div ref={workRef}>
-        <Section title="My Work">
-          <div className="mt-6 flex flex-col gap-16">
+        <Section title="Work">
+          <div className="flex flex-col gap-16">
             <WorkGroupCard title="Apps" image="apps.svg">
               <WorkCard
                 image="weather.jpeg"
                 title="54633°"
                 description="Hyperlocal iOS weather app for iOS, iPadOS and MacOS. Built using SwiftUI and the Apple Weather API."
                 href="https://apps.apple.com/gb/app/54633/id6468419990/">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
               </WorkCard>
               <WorkCard
                 image="personal-bests.jpeg"
                 title="Personal Bests"
                 description="Progress tracking iOS app for tracking weight lifting. Built using Swift and the SwiftData framework."
                 href="https://apps.apple.com/gb/app/personal-bests/id6468835590/">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
               </WorkCard>
               <WorkCard
                 image="shaker-gradient.jpg"
                 title="Shaker Gradient"
                 description="Shake to Generate! - Gradient generator for iOS. Built using Swift and SwiftUI with iCloud Sync."
                 href="https://apps.apple.com/gb/app/gradient-shaker/id6499209609">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
               </WorkCard>
               <WorkCard
                 image="speed0.jpg"
                 title="SPEED0"
                 description="Route between locations, track average speed and change tracks. Built using Swift and SwiftUI."
                 href="https://apps.apple.com/gb/app/speed0/id6469321016">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "pink"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
               </WorkCard>
             </WorkGroupCard>
 
@@ -129,7 +130,7 @@ const Home = () => {
               <WorkCard
                 image="swtools.png"
                 title="SWTools"
-                description="Swift Package that provides a collection of tools for use in Swift projects."
+                description="Multi-platform package providing a collection of tools for use in Swift projects."
                 href="https://github.com/matt54633/SWTools">
                 <SkillList skills={["Swift"]} colours={["orange"]} />
               </WorkCard>
@@ -143,10 +144,10 @@ const Home = () => {
                 href="https://mobilecarmechanic.net">
                 <SkillList
                   skills={["HTML", "CSS", "JS"]}
-                  colours={["primary-blue", "primary-blue", "pink"]}
+                  colours={["primary-blue", "primary-blue", "primary-blue"]}
                 />
               </WorkCard>
-              <WorkCard
+              {/* <WorkCard
                 image="notes.jpg"
                 title="Notes Site"
                 description="Responsive note taker developed using TailwindCSS and Supabase authentication and database."
@@ -155,7 +156,7 @@ const Home = () => {
                   skills={["HTML", "CSS", "JS"]}
                   colours={["primary-blue", "primary-blue", "pink"]}
                 />
-              </WorkCard>
+              </WorkCard> */}
 
               {/* <div className="flex flex-col justify-between gap-4 lg:gap-0">
               <SubDomainCard
