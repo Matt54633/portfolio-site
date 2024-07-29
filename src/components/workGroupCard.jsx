@@ -5,9 +5,9 @@ const WorkGroupCard = ({ title, image, children }) => {
         <img
           src={`/${image}`}
           alt="Work Group Icon"
-          className="h-12 w-12 rounded-full bg-decorator-grey p-[0.6rem]"
+          className="h-8 w-8 rounded-full bg-decorator-grey p-[0.35rem]"
         />
-        <h1 className="text-[1.5rem] font-bold">{title}</h1>
+        <h1 className="text-[1.3rem] font-bold">{title}</h1>
       </div>
       <div className="flex flex-col gap-6 lg:gap-5">{children}</div>
     </div>

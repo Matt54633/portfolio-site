@@ -27,11 +27,6 @@ a {
   text-decoration: none;
 }
 
-nav {
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px) contrast(90%);
-}
-
 .menu {
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px) contrast(90%);

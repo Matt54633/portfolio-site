@@ -55,7 +55,7 @@ const Menu = ({ refs }) => {
         className={`menuLink flex h-10 w-10 items-center justify-center rounded-lg border-[1px] border-light-grey p-[0.2rem] transition hover:border-light-blue ${
           activeSection === "about" ? "bg-light-blue" : ""
         }`}>
-        <img alt="Menu" className="h-8 w-8" src="/memoji.PNG" />
+        <img alt="Menu" className="h-8 w-8" src="/memoji.png" />
       </a>
       <a
         id="menuSkills"
