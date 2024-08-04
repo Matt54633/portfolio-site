@@ -4,6 +4,7 @@ import jsPDF from "jspdf";
 import Nav from "../components/nav";
 import Form from "../components/form";
 import DocumentComponent from "../components/document";
+import { useEffect, useRef } from 'react';
 
 const PdfBuilder = () => {
     const [formData, setFormData] = useState({ title: "Summer Camp 2024" });
@@ -16,6 +17,32 @@ const PdfBuilder = () => {
             [name]: value,
         }));
     };
+    const documentRef = useRef(null);
+
+
+    useEffect(() => {
+        const handleResize = () => {
+            if (documentRef.current) {
+                const minWidth = 750;
+                const container = documentRef.current.parentElement;
+                const computedStyle = getComputedStyle(container);
+                const paddingMargin = parseFloat(computedStyle.paddingLeft) + parseFloat(computedStyle.paddingRight) +
+                                      parseFloat(computedStyle.marginLeft) + parseFloat(computedStyle.marginRight);
+                const viewportWidth = window.innerWidth - paddingMargin;
+                const scaleFactor = Math.max(0.4, viewportWidth / minWidth * 0.98);
+                const scale = Math.min(1, scaleFactor * (viewportWidth / window.innerWidth));
+                documentRef.current.style.transform = `scale(${scale})`;
+                documentRef.current.style.transformOrigin = 'top left';
+                documentRef.current.style.height = `${documentRef.current.scrollHeight * scale}px`;
+
+            }
+        };
+
+        window.addEventListener('resize', handleResize);
+        handleResize(); // Call once to set initial scale
+
+        return () => window.removeEventListener('resize', handleResize);
+    }, []);
 
     const handleSubmit = async (e) => {
         e.preventDefault();
@@ -71,10 +98,10 @@ const PdfBuilder = () => {
 
     return (
 
-        <div className="overflow-hidden">
+        <div className="overflow-hidden flex flex-col items-center">
             <Nav />
-            <div className="flex flex-col gap-8 p-5 lg:flex-row lg:gap-10">
-                <div className="flex w-full flex-col gap-3 lg:w-1/4">
+            <div className="flex flex-col gap-8 p-5 lg:flex-row lg:gap-7" style={{ width: "min(100%, 1400px)" }}>
+                <div className="flex w-full flex-col gap-4 lg:w-1/4">
                     <Form
                         formData={formData}
                         handleChange={handleChange}
@@ -84,31 +111,31 @@ const PdfBuilder = () => {
                     <button
                         type="button"
                         onClick={handleSubmit}
-                        className="hover:bg-scout-purple-hover mt-1 w-full rounded-lg bg-scout-purple px-2 py-3 font-bold text-white transition-colors"
+                        className="hover:bg-scout-purple-hover w-full rounded-lg bg-scout-purple px-2 py-2.5 font-bold text-white transition-colors"
                     >
                         Download PDF
                     </button>
                 </div>
-                <div className="flex w-full   flex-col gap-4 lg:w-3/4">
-                    <h1 className="border-b-2 pb-1 text-lg font-bold">
+                <div className="flex w-full bg-gray-100 rounded-lg py-2   flex-col gap-4 lg:w-3/4">
+                    <h1 className="border-b-2 px-4 pb-1  font-bold">
                         Document Preview
                     </h1>
 
-                    <div className="overflow-x-auto">
-
-                    {isLoading ? (
-                        <div className="bg-[rgb(229,231,235)] p-10 rounded-lg text-center ">
-                            <p className="text-2xl font-bold">Generating PDF</p>
+                    <div className="overflow-x-auto px-4 pb-2.5">
+                        {isLoading ? (
+                            <div className="bg-gray-400 p-10 rounded-lg text-center">
+                                <p className="text-2xl font-bold">Generating PDF</p>
                             </div>
-                    ) : (
-                        
-                        <div className="ring-1 min-w-[700px] ring-inset ring-black">
-                        <div id="document-component">
-                            <DocumentComponent formData={formData} />
-                        </div>
-
-                    </div>
-                    )}
+                        ) : (
+                            <div
+                            ref={documentRef}
+                            
+                            style={{ minWidth: '750px' }}
+                        >                                <div id="document-component">
+                                    <DocumentComponent formData={formData} />
+                                </div>
+                            </div>
+                        )}
                     </div>
                 </div>
             </div>
