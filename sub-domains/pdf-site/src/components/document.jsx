@@ -7,7 +7,7 @@ const DocumentComponent = ({ formData = { title: "", startDate: "", endDate: "" 
 
     
     return (
-        <div className="flex w-full  flex-col gap-4 bg-white rounded-lg border-2 border-gray-400">
+        <div className="flex w-full  flex-col gap-4 bg-white rounded-lg  border-gray-400">
            
             <div className="flex flex-col gap-4 p-4">
                 <div className="flex items-center justify-between">
