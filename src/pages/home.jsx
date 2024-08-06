@@ -114,7 +114,7 @@ const Home = () => {
               </WorkCard>
               <WorkCard
                 image="shaker-gradient.jpg"
-                title="Shaker Gradient"
+                title="Gradient Shaker"
                 description="Shake to Generate! - Gradient generator for iOS. Built using Swift and SwiftUI with iCloud Sync."
                 href="https://apps.apple.com/gb/app/gradient-shaker/id6499209609">
                 <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
@@ -147,6 +147,16 @@ const Home = () => {
                 <SkillList
                   skills={["HTML", "CSS", "JS"]}
                   colours={["primary-blue", "primary-blue", "primary-blue"]}
+                />
+              </WorkCard>
+              <WorkCard
+                image="pdf-site.png"
+                title="PDF Generator"
+                description="PDF Generator created for a local Scout group to streamline form generation for camping activities. "
+                href="https://pdf.matt54633.com">
+                <SkillList
+                  skills={["React"]}
+                  colours={["primary-blue"]}
                 />
               </WorkCard>
               {/* <WorkCard
