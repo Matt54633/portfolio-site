@@ -4,7 +4,7 @@ const Hero = () => {
       <div className="flex flex-row items-center justify-between gap-4 md:mt-0">
         <div className="flex flex-col gap-4 md:gap-8">
           <img
-            src="/heroImageMedium.png"
+            src="/heroImageMedium.svg"
             alt="Hero"
             className="mb-[-6rem] ml-auto hidden h-2/5  w-2/5 min-[340px]:block min-[600px]:hidden duration-300 ease-in-out transition hover:scale-105"
           />
@@ -18,7 +18,7 @@ const Hero = () => {
           </p>
         </div>
         <img
-          src="/heroImage.png"
+          src="/heroImage.svg"
           alt="Hero"
           className="w-2/5 max-[599px]:hidden md:block md:w-2/5 min-[810px]:w-1/3 lg:w-1/3 duration-300 ease-in-out transition hover:scale-105"
         />
