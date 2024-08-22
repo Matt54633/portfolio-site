@@ -70,7 +70,7 @@ const CV = () => {
                 voluntary or community work.
               </p>
 
-              <SkillList skills={["Yr1 - 82.57%", "Yr2 - 76.04%"]} colours={[]} />
+              <SkillList skills={["1st Class Honours"]} colours={[]} />
             </ExperienceCard>
 
             <ExperienceCard
