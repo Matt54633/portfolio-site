@@ -28,7 +28,7 @@ const Home = () => {
 
         <Section title="About Me">
           <p className="font-medium">
-            Hey! I'm a Software Engineer student based in the UK. With prior experience as both a
+            Hey! I'm a Software Engineer based in the UK. With prior experience as both a
             web developer and IT technician during my stints at QV Systems and Huish MAT, I have
             developed numerous applications utilising technologies such as NodeJS, Oracle APEX,
             Python Django, React, Swift and more.
@@ -78,6 +78,12 @@ const Home = () => {
       <div ref={experienceRef}>
         <Section title="Career">
           <div className="grid gap-4 lg:grid-cols-2">
+          <ExperienceCard
+              jobTitle="Associate Software Engineer"
+              company="ADP"
+              datePeriod="Current"
+              icon="code.svg"
+            />
             <ExperienceCard
               jobTitle="Junior Web Developer"
               company="QV Systems"

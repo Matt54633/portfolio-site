@@ -62,14 +62,8 @@ const CV = () => {
             <ExperienceCard
               jobTitle="Bournemouth University"
               company="Software Engineering BSc"
-              datePeriod="2020 - Now"
+              datePeriod="2020 - 2024"
               icon="cap.svg">
-              <p className="font-medium">
-                Subject Achievement Scholarship: Computing and IT Scholarship awarded due to
-                demonstrating commitment to my area of study through additional work experience and
-                voluntary or community work.
-              </p>
-
               <SkillList skills={["1st Class Honours"]} colours={[]} />
             </ExperienceCard>
 
@@ -78,14 +72,22 @@ const CV = () => {
               company="Computing and IT BTEC"
               datePeriod="2018 - 2020"
               icon="cap.svg">
-              <p className="font-medium">
-                Level 3 Extended Diploma in Computing & IT (Software Development).
-              </p>
+           
 
               <SkillList skills={["D*D*D*"]} colours={[]} />
             </ExperienceCard>
           </div>
-
+          <ExperienceCard
+            className="lg:col-span-2"
+            jobTitle="Bournemouth University"
+            company=" Subject Achievement Scholarship "
+            datePeriod="2020"
+            icon="cap.svg">
+            <p className="font-medium">
+              Computing and IT Scholarship awarded due to demonstrating commitment to my area of
+              study through additional work experience and voluntary or community work.
+            </p>
+          </ExperienceCard>
           <ExperienceCard
             className="lg:col-span-2"
             jobTitle="Bucklers Mead Academy"
@@ -113,6 +115,12 @@ const CV = () => {
 
       <Section title="Experience">
         <div className="mt-7 flex flex-col gap-4">
+          <ExperienceCard
+            jobTitle="Associate Software Engineer"
+            company="ADP"
+            datePeriod="Current"
+            icon="code.svg"
+          />
           <ExperienceCard
             jobTitle="QV Systems"
             company="Junior Web Developer"
