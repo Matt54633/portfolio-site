@@ -8,6 +8,7 @@ import WeatherPrivacyPolicy from "./pages/weatherPrivacyPolicy";
 import EmissionIqPrivacyPolicy from "./pages/emissionIqPrivacyPolicy";
 import PortfolioPrivacyPolicy from "./pages/portfolioPrivacyPolicy";
 import GradientShakerPrivacyPolicy from "./pages/gradientShakerPrivacyPolicy";
+import BudgetsPrivacyPolicy from "./pages/budgetsPrivacyPolicy";
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
         <Route path="/emissionIqPrivacyPolicy" element={<EmissionIqPrivacyPolicy />} />
         <Route path="/portfolioPrivacyPolicy" element={<PortfolioPrivacyPolicy />} />
         <Route path="/gradientShakerPrivacyPolicy" element={<GradientShakerPrivacyPolicy />} />
+        <Route path="/budgetsPrivacyPolicy" element={<BudgetsPrivacyPolicy />} />
       </Routes>
     </>
   );
