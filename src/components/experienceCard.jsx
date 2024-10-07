@@ -12,9 +12,12 @@ const ExperienceCard = ({ company, jobTitle, datePeriod, icon, children }) => {
         <div className="flex flex-col justify-between md:w-full md:flex-row md:items-center">
           <div>
             <h1 className="text-[1.15rem] font-bold">{company}</h1>
+            <div className="flex gap-2.5 items-center" >
             <p className="font-medium">{jobTitle}</p>
+            <div className="h-1.5 w-1.5 rounded-full bg-light-blue"></div>
+            <p className="font-medium ">{datePeriod}</p>
+            </div>
           </div>
-          <p className="font-medium text-placeholder-grey">{datePeriod}</p>
         </div>
       </div>
 

@@ -28,8 +28,8 @@ const Home = () => {
 
         <Section title="About Me">
           <p className="font-medium">
-            Hey! I'm a Software Engineer based in the UK. With prior experience as both a
-            web developer and IT technician during my stints at QV Systems and Huish MAT, I have
+            Hey! I'm a Software Engineer based in the UK. With prior experience as both a web
+            developer and IT technician during my stints at QV Systems and Huish MAT, I have
             developed numerous applications utilising technologies such as NodeJS, Oracle APEX,
             Python Django, React, Swift and more.
           </p>
@@ -78,12 +78,14 @@ const Home = () => {
       <div ref={experienceRef}>
         <Section title="Career">
           <div className="grid gap-4 lg:grid-cols-2">
-          <ExperienceCard
+            <div className="lg:col-span-2">
+            <ExperienceCard
               jobTitle="Associate Software Engineer"
               company="ADP"
               datePeriod="Current"
               icon="code.svg"
             />
+            </div>
             <ExperienceCard
               jobTitle="Junior Web Developer"
               company="QV Systems"
@@ -104,6 +106,20 @@ const Home = () => {
         <Section title="Work">
           <div className="flex flex-col gap-16">
             <WorkGroupCard title="Apps" image="apps.svg">
+              {/* <WorkCard
+                image="emissionIQ.png"
+                title="EmissionIQ"
+                description="Gamified iOS app for tracking carbon emissions. Level up, achieve trophies and more."
+                href="https://apps.apple.com/gb/app/54633/id6468419990/">
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
+              </WorkCard> */}
+              <WorkCard
+                image="budgets.png"
+                title="Clear Budgets"
+                description="Budgeting iOS app for tracking expenses, managing subscriptions and more."
+                href="https://apps.apple.com/gb/app/clear-budgets/id6503365476">
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
+              </WorkCard>
               <WorkCard
                 image="weather.jpeg"
                 title="54633°"
@@ -160,10 +176,7 @@ const Home = () => {
                 title="PDF Generator"
                 description="PDF Generator created for a local Scout group to streamline form generation for camping activities. "
                 href="https://pdf.matt54633.com">
-                <SkillList
-                  skills={["React"]}
-                  colours={["primary-blue"]}
-                />
+                <SkillList skills={["React"]} colours={["primary-blue"]} />
               </WorkCard>
               {/* <WorkCard
                 image="notes.jpg"
