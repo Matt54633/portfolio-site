@@ -106,13 +106,13 @@ const Home = () => {
         <Section title="Work">
           <div className="flex flex-col gap-16">
             <WorkGroupCard title="Apps" image="apps.svg">
-              {/* <WorkCard
+              <WorkCard
                 image="emissionIQ.png"
                 title="EmissionIQ"
                 description="Gamified iOS app for tracking carbon emissions. Level up, achieve trophies and more."
-                href="https://apps.apple.com/gb/app/54633/id6468419990/">
+                href="https://apps.apple.com/gb/app/emissioniq/id6477887658">
                 <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
-              </WorkCard> */}
+              </WorkCard>
               <WorkCard
                 image="budgets.png"
                 title="Clear Budgets"
