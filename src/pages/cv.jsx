@@ -173,8 +173,7 @@ const CV = () => {
       <Section title="Interests">
         <p className="font-medium">
           Outside of work, I enjoy cooking and experimenting with new recipes alongside my friends
-          and family. I'm a dedicated supporter of my local football team, holding a season ticket
-          and travelling across the country to cheer them on. I'm passionate about staying updated
+          and family. I'm also passionate about staying updated
           with the latest technologies and often develop my own projects, exploring new programming
           languages and frameworks. My commitment to volunteering began with the Scouting
           Association, and this remains a cause close to my heart.
