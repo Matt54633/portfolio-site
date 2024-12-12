@@ -80,7 +80,7 @@ const CV = () => {
           <ExperienceCard
             className="lg:col-span-2"
             jobTitle="Bournemouth University"
-            company="Bournemouth University Subject Achievement Scholarship - Computing and IT"
+            company="Subject Achievement Scholarship"
             datePeriod="2020"
             icon="cap.svg">
             <p className="font-medium">
