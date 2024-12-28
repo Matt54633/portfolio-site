@@ -79,17 +79,6 @@ const CV = () => {
           </div>
           <ExperienceCard
             className="lg:col-span-2"
-            jobTitle="Bournemouth University"
-            company="Subject Achievement Scholarship"
-            datePeriod="2020"
-            icon="cap.svg">
-            <p className="font-medium">
-              Awarded due to demonstrating outstanding commitment to the study through work
-              experience and voluntary work.
-            </p>
-          </ExperienceCard>
-          <ExperienceCard
-            className="lg:col-span-2"
             jobTitle="Bucklers Mead Academy"
             company="GCSE"
             datePeriod="2013 - 2018"
@@ -110,14 +99,25 @@ const CV = () => {
               colours={[]}
             />
           </ExperienceCard>
+          <ExperienceCard
+            className="lg:col-span-2"
+            jobTitle="Bournemouth University"
+            company="Subject Achievement Scholarship"
+            datePeriod="2020"
+            icon="cap.svg">
+            <p className="font-medium">
+              Awarded due to demonstrating outstanding commitment to the study through work
+              experience and voluntary work.
+            </p>
+          </ExperienceCard>
         </div>
       </Section>
 
       <Section title="Experience">
         <div className="mt-7 flex flex-col gap-4">
           <ExperienceCard
-            jobTitle="Associate Software Engineer"
-            company="ADP"
+            jobTitle="ADP"
+            company="Associate Software Engineer"
             datePeriod="Current"
             icon="code.svg"
           />

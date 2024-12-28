@@ -77,24 +77,22 @@ const Home = () => {
 
       <div ref={experienceRef}>
         <Section title="Career">
-          <div className="grid gap-4 lg:grid-cols-2">
-            <div className="lg:col-span-2">
+          <div className="flex gap-4 flex-col">
             <ExperienceCard
-              jobTitle="Associate Software Engineer"
-              company="ADP"
+              company="Associate Software Engineer"
+              jobTitle="ADP"
               datePeriod="Current"
               icon="code.svg"
             />
-            </div>
             <ExperienceCard
-              jobTitle="Junior Web Developer"
-              company="QV Systems"
+              company="Junior Web Developer"
+              jobTitle="QV Systems"
               datePeriod="2022 - 2023"
               icon="code.svg"
             />
             <ExperienceCard
-              jobTitle="IT Technician"
-              company="Huish MAT"
+              company="IT Technician"
+              jobTitle="Huish MAT"
               datePeriod="2021"
               icon="cog.svg"
             />
