@@ -60,7 +60,7 @@ const CV = () => {
 
       <Section title="Education">
         <div className="mt-7 flex flex-col gap-4">
-          <div className="grid gap-4 lg:grid-cols-2">
+          {/* <div className="grid gap-4 lg:grid-cols-2"> */}
             <ExperienceCard
               jobTitle="Bournemouth University"
               company="Software Engineering BSc"
@@ -76,7 +76,7 @@ const CV = () => {
               icon="cap.svg">
               <SkillList skills={["D*D*D*"]} colours={[]} />
             </ExperienceCard>
-          </div>
+          {/* </div> */}
           <ExperienceCard
             className="lg:col-span-2"
             jobTitle="Bucklers Mead Academy"
@@ -136,7 +136,7 @@ const CV = () => {
               ]}
             />
           </ExperienceCard>
-          <div className="grid gap-4 lg:grid-cols-2">
+          {/* <div className="grid gap-4 lg:grid-cols-2"> */}
             <ExperienceCard
               jobTitle="Huish MAT"
               company="IT Technician"
@@ -154,9 +154,8 @@ const CV = () => {
 
             <ExperienceCard
               className="lg:col-span-2"
-              jobTitle="Home"
-              company="Freelancing"
-              datePeriod="2001 - Now"
+              jobTitle="United Kingdom"
+              company="Freelance and Voluntary Work"
               icon="code.svg">
               <BulletedList
                 items={[
@@ -166,7 +165,7 @@ const CV = () => {
                 ]}
               />
             </ExperienceCard>
-          </div>
+          {/* </div> */}
         </div>
       </Section>
 
