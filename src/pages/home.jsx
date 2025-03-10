@@ -28,10 +28,10 @@ const Home = () => {
 
         <Section title="About Me">
           <p className="font-medium">
-            Hey! I'm a Software Engineer based in the UK. With prior experience as both a web
-            developer and IT technician during my stints at QV Systems and Huish MAT, I have
-            developed numerous applications utilising technologies such as NodeJS, Oracle APEX,
-            Python Django, React, Swift and more.
+            Hey! I'm a Software Engineer based in the UK, passionate about building innovative
+            applications. With experience as both a web developer and a software engineer, I work
+            with a wide range of technologies, including Node.js, Stencil.js, React,
+            Swift, AWS, C#, and Web Components.
           </p>
         </Section>
       </div>
@@ -43,16 +43,16 @@ const Home = () => {
               "HTML",
               "CSS",
               "JS",
-              "React",
-              "SwiftUI",
-              "Node.js",
               "C#",
-              "Python",
-              "Django",
-              "SQL",
               "Swift",
-              "Terraform",
+              "Python",
+              "SQL",
+              "React",
+              "Node.js",
+              "Stencil.js",
+              "SwiftUI",
               "AWS",
+              "Terraform",
               "Firebase"
             ]}
             colours={[
@@ -61,12 +61,12 @@ const Home = () => {
               "primary-blue",
               "primary-blue",
               "primary-blue",
+              "primary-blue",
+              "primary-blue",
               "green",
               "green",
               "green",
               "green",
-              "green",
-              "orange",
               "red",
               "red",
               "red"
@@ -77,7 +77,7 @@ const Home = () => {
 
       <div ref={experienceRef}>
         <Section title="Career">
-          <div className="flex gap-4 flex-col">
+          <div className="flex flex-col gap-4">
             <ExperienceCard
               company="Associate Software Engineer"
               jobTitle="ADP"
@@ -109,42 +109,42 @@ const Home = () => {
                 title="EmissionIQ"
                 description="Gamified iOS app for tracking carbon emissions. Level up, achieve trophies and more."
                 href="https://apps.apple.com/gb/app/emissioniq/id6477887658">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="budgets.png"
                 title="Clear Budgets"
                 description="Budgeting iOS app for tracking expenses, managing subscriptions and more."
                 href="https://apps.apple.com/gb/app/clear-budgets/id6503365476">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="weather.jpeg"
                 title="54633°"
                 description="Hyperlocal iOS weather app for iOS, iPadOS and MacOS. Built using SwiftUI and the Apple Weather API."
                 href="https://apps.apple.com/gb/app/54633/id6468419990/">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="personal-bests.jpeg"
                 title="Personal Bests"
                 description="Progress tracking iOS app for tracking weight lifting. Built using Swift and the SwiftData framework."
                 href="https://apps.apple.com/gb/app/personal-bests/id6468835590/">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="shaker-gradient.jpg"
                 title="Gradient Shaker"
                 description="Shake to Generate! - Gradient generator for iOS. Built using Swift and SwiftUI with iCloud Sync."
                 href="https://apps.apple.com/gb/app/gradient-shaker/id6499209609">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="speed0.jpg"
                 title="SPEED0"
                 description="Route between locations, track average speed and change tracks. Built using Swift and SwiftUI."
                 href="https://apps.apple.com/gb/app/speed0/id6469321016">
-                <SkillList skills={["Swift", "SwiftUI"]} colours={["orange", "primary-blue"]} />
+                <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
             </WorkGroupCard>
 
@@ -154,7 +154,7 @@ const Home = () => {
                 title="SWTools"
                 description="Multi-platform package providing a collection of tools for use in Swift projects."
                 href="https://github.com/matt54633/SWTools">
-                <SkillList skills={["Swift"]} colours={["orange"]} />
+                <SkillList skills={["Swift"]} colours={["primary-blue"]} />
               </WorkCard>
             </WorkGroupCard>
 
@@ -170,11 +170,11 @@ const Home = () => {
                 />
               </WorkCard>
               <WorkCard
-                image="pdf-site.png"
-                title="PDF Generator"
-                description="PDF Generator created for a local Scout group to streamline form generation for camping activities. "
-                href="https://pdf.matt54633.com">
-                <SkillList skills={["React"]} colours={["primary-blue"]} />
+                image="bennys.png"
+                title="Benny's Fish and Chips"
+                description="Website developed for a local fish and chip shop. Built using React and Tailwind."
+                href="https://bennysfishandchips.co.uk">
+                <SkillList skills={["React"]} colours={["green"]} />
               </WorkCard>
               {/* <WorkCard
                 image="notes.jpg"

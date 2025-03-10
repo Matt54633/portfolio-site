@@ -26,32 +26,34 @@ const CV = () => {
       <Section title="Skills">
         <SkillList
           skills={[
-            "C#",
             "HTML",
             "CSS",
             "JS",
-            "Node.js",
-            "React",
+            "C#",
             "Swift",
             "Python",
-            "Django",
             "SQL",
-            "Terraform",
+            "React",
+            "Node.js",
+            "Stencil.js",
+            "SwiftUI",
             "AWS",
+            "Terraform",
             "Firebase"
           ]}
           colours={[
-            "pink",
             "primary-blue",
             "primary-blue",
-            "pink",
-            "pink",
-            "pink",
-            "orange",
-            "orange",
-            "orange",
+            "primary-blue",
+            "primary-blue",
+            "primary-blue",
+            "primary-blue",
+            "primary-blue",
             "green",
             "green",
+            "green",
+            "green",
+            "red",
             "red",
             "red"
           ]}
@@ -61,21 +63,21 @@ const CV = () => {
       <Section title="Education">
         <div className="mt-7 flex flex-col gap-4">
           {/* <div className="grid gap-4 lg:grid-cols-2"> */}
-            <ExperienceCard
-              jobTitle="Bournemouth University"
-              company="Software Engineering BSc"
-              datePeriod="2020 - 2024"
-              icon="cap.svg">
-              <SkillList skills={["1st Class Honours"]} colours={[]} />
-            </ExperienceCard>
+          <ExperienceCard
+            jobTitle="Bournemouth University"
+            company="Software Engineering BSc"
+            datePeriod="2020 - 2024"
+            icon="cap.svg">
+            <SkillList skills={["1st Class Honours"]} colours={[]} />
+          </ExperienceCard>
 
-            <ExperienceCard
-              jobTitle="Strode College"
-              company="Computing and IT BTEC"
-              datePeriod="2018 - 2020"
-              icon="cap.svg">
-              <SkillList skills={["D*D*D*"]} colours={[]} />
-            </ExperienceCard>
+          <ExperienceCard
+            jobTitle="Strode College"
+            company="Computing and IT BTEC"
+            datePeriod="2018 - 2020"
+            icon="cap.svg">
+            <SkillList skills={["D*D*D*"]} colours={[]} />
+          </ExperienceCard>
           {/* </div> */}
           <ExperienceCard
             className="lg:col-span-2"
@@ -137,34 +139,34 @@ const CV = () => {
             />
           </ExperienceCard>
           {/* <div className="grid gap-4 lg:grid-cols-2"> */}
-            <ExperienceCard
-              jobTitle="Huish MAT"
-              company="IT Technician"
-              datePeriod="2021"
-              icon="cog.svg">
-              <BulletedList
-                items={[
-                  "Collaborated with IT Network Manager across three primary schools.",
-                  "Repurposed IT equipment to optimise resource utilisation.",
-                  "Provided timely IT support to staff members.",
-                  "Developed technical skills and professionalism through hands-on exposure."
-                ]}
-              />
-            </ExperienceCard>
+          <ExperienceCard
+            jobTitle="Huish MAT"
+            company="IT Technician"
+            datePeriod="2021"
+            icon="cog.svg">
+            <BulletedList
+              items={[
+                "Collaborated with IT Network Manager across three primary schools.",
+                "Repurposed IT equipment to optimise resource utilisation.",
+                "Provided timely IT support to staff members.",
+                "Developed technical skills and professionalism through hands-on exposure."
+              ]}
+            />
+          </ExperienceCard>
 
-            <ExperienceCard
-              className="lg:col-span-2"
-              jobTitle="United Kingdom"
-              company="Freelance and Voluntary Work"
-              icon="code.svg">
-              <BulletedList
-                items={[
-                  "Worked with a local junior school to conceptualise and produce compelling marketing materials and documentation.",
-                  "Engaged in meaningful interactions with staff members to comprehensively understand their needs and expectations.",
-                  "Employed attentive dialogue and a deep understanding to craft solutions that not only met but exceeded their requirements."
-                ]}
-              />
-            </ExperienceCard>
+          <ExperienceCard
+            className="lg:col-span-2"
+            jobTitle="United Kingdom"
+            company="Freelance and Voluntary Work"
+            icon="code.svg">
+            <BulletedList
+              items={[
+                "Worked with a local junior school to conceptualise and produce compelling marketing materials and documentation.",
+                "Engaged in meaningful interactions with staff members to comprehensively understand their needs and expectations.",
+                "Employed attentive dialogue and a deep understanding to craft solutions that not only met but exceeded their requirements."
+              ]}
+            />
+          </ExperienceCard>
           {/* </div> */}
         </div>
       </Section>
@@ -172,10 +174,10 @@ const CV = () => {
       <Section title="Interests">
         <p className="font-medium">
           Outside of work, I enjoy cooking and experimenting with new recipes alongside my friends
-          and family. I'm also passionate about staying updated
-          with the latest technologies and often develop my own projects, exploring new programming
-          languages and frameworks. My commitment to volunteering began with the Scouting
-          Association, and this remains a cause close to my heart.
+          and family. I'm also passionate about staying updated with the latest technologies and
+          often develop my own projects, exploring new programming languages and frameworks. My
+          commitment to volunteering began with the Scouting Association, and this remains a cause
+          close to my heart.
         </p>
       </Section>
 
