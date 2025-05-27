@@ -14,12 +14,11 @@ const CV = () => {
 
       <Section title="About Me">
         <p className="font-medium">
-          As an ambitious and motivated software engineer with prior industry experience in both Web
-          Development and Cloud Engineering, I am looking for my next role to grow, learn and
-          develop my skills further. I am adept at learning new technologies quickly and thoroughly,
-          and can clearly communicate within a wider team. I am driven by a desire to continually
-          improve my own skills and understanding, alongside applying my skills in ways that benefit
-          others.
+          As an ambitious and adaptable Software Engineer with professional experience in both
+          corporate and start-up environments, I bring a strong foundation in full-stack
+          development, cloud engineering, and software delivery. Having worked on scalable
+          cloud-based applications and modern web platforms, I thrive on learning new technologies
+          quickly and contributing meaningfully to cross-functional teams.
         </p>
       </Section>
 
@@ -120,9 +119,16 @@ const CV = () => {
           <ExperienceCard
             jobTitle="ADP"
             company="Associate Software Engineer"
-            datePeriod="Current"
-            icon="code.svg"
-          />
+            datePeriod="2024 - Current"
+            icon="code.svg">
+            <BulletedList
+              items={[
+                "Delivering scalable infrastructure using AWS,supporting continuous integration and deployment of cloud services.",
+                "Building reusable Web Components with TypeScript to support dynamic and accessible user interfaces.",
+                "Developing and maintaining APIs using C#, ensuring secure and efficient data handling for payroll processing."
+              ]}
+            />
+          </ExperienceCard>
           <ExperienceCard
             jobTitle="QV Systems"
             company="Junior Web Developer"
@@ -134,7 +140,6 @@ const CV = () => {
                 "Completed the development of Node.js applications, enhancing system functionality.",
                 "Led the research, design, and implementation of a Robotic Process Automation system, leveraging AWS infrastructure.",
                 "Revamped internal API documentation, ensuring accuracy and clarity for effective communication.",
-                "Chaired Employee Representative Group, organising company events and ensuring employee feedback was voiced."
               ]}
             />
           </ExperienceCard>
@@ -148,8 +153,7 @@ const CV = () => {
               items={[
                 "Collaborated with IT Network Manager across three primary schools.",
                 "Repurposed IT equipment to optimise resource utilisation.",
-                "Provided timely IT support to staff members.",
-                "Developed technical skills and professionalism through hands-on exposure."
+                "Provided timely IT support to staff members to resolve queries.",
               ]}
             />
           </ExperienceCard>
@@ -161,9 +165,8 @@ const CV = () => {
             icon="code.svg">
             <BulletedList
               items={[
-                "Worked with a local junior school to conceptualise and produce compelling marketing materials and documentation.",
-                "Engaged in meaningful interactions with staff members to comprehensively understand their needs and expectations.",
-                "Employed attentive dialogue and a deep understanding to craft solutions that not only met but exceeded their requirements."
+                "Collaborated with a local school to conceptualise and produce compelling marketing materials and documentation.",
+                "Developed a bespoke CRM system for a local mechanic, streamlining customer management and service tracking."
               ]}
             />
           </ExperienceCard>
@@ -173,11 +176,11 @@ const CV = () => {
 
       <Section title="Interests">
         <p className="font-medium">
-          Outside of work, I enjoy cooking and experimenting with new recipes alongside my friends
-          and family. I'm also passionate about staying updated with the latest technologies and
-          often develop my own projects, exploring new programming languages and frameworks. My
-          commitment to volunteering began with the Scouting Association, and this remains a cause
-          close to my heart.
+          Outside of work, I enjoy cooking and trying new recipes with friends and family. I’m
+          passionate about keeping up with emerging technologies, often through building personal
+          projects, exploring new frameworks, and reading technical books. I also remain actively
+          committed to volunteering, a value instilled in me through my time with the Scouting
+          Association.
         </p>
       </Section>
 

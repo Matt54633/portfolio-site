@@ -81,7 +81,7 @@ const Home = () => {
             <ExperienceCard
               company="Associate Software Engineer"
               jobTitle="ADP"
-              datePeriod="Current"
+              datePeriod="2024 - Current"
               icon="code.svg"
             />
             <ExperienceCard

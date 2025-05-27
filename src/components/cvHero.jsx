@@ -7,7 +7,7 @@ const CvHero = () => {
             <h1 className="font-[800] text-[5rem] lg:text-[6rem] leading-none w-full mb-10 lg-mb-0">CV</h1>
             </div>
 
-            <PrimaryButton buttonName="Download My CV" destination={"/CV.pdf"} target={"_blank"} />
+            <PrimaryButton buttonName="Download My CV" destination={"/cv.pdf"} target={"_blank"} />
         </section>
     )
 }
