@@ -123,7 +123,7 @@ const CV = () => {
             icon="code.svg">
             <BulletedList
               items={[
-                "Delivering scalable infrastructure using AWS,supporting continuous integration and deployment of cloud services.",
+                "Delivering scalable infrastructure using AWS, supporting continuous integration and deployment of cloud services.",
                 "Building reusable Web Components with TypeScript to support dynamic and accessible user interfaces.",
                 "Developing and maintaining APIs using C#, ensuring secure and efficient data handling for payroll processing."
               ]}
