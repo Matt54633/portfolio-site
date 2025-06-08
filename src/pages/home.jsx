@@ -103,6 +103,45 @@ const Home = () => {
       <div ref={workRef}>
         <Section title="Work">
           <div className="flex flex-col gap-16">
+            <WorkGroupCard title="Sites" image="globe.svg">
+              <WorkCard
+                image="mcmsw.jpg"
+                title="MCMSW"
+                description="Designed, developed and deployed a brand new website and branding package for a local mechanic."
+                href="https://mobilecarmechanic.net">
+                <SkillList
+                  skills={["HTML", "CSS", "JS"]}
+                  colours={["primary-blue", "primary-blue", "primary-blue"]}
+                />
+              </WorkCard>
+              <WorkCard
+                image="mcmsw-crm.png"
+                title="MCMSW CRM"
+                description="Bespoke customer relationship management system with automated document generation and invoicing. "
+                href="https://mobilecarmechanic.net">
+                <SkillList
+                  skills={["React", "Firebase"]}
+                  colours={["green", "red"]}
+                />
+              </WorkCard>
+              <WorkCard
+                image="bennys.png"
+                title="Benny's Fish and Chips"
+                description="Website developed for a local fish and chip shop. Built using React and Tailwind."
+                href="https://bennysfishandchips.co.uk">
+                <SkillList skills={["React"]} colours={["green"]} />
+              </WorkCard>
+            </WorkGroupCard>
+
+            <WorkGroupCard title="Open Source" image="open-source.svg">
+              <WorkCard
+                image="swtools.png"
+                title="SWTools"
+                description="Multi-platform package providing a collection of tools for use in Swift projects."
+                href="https://github.com/matt54633/SWTools">
+                <SkillList skills={["Swift"]} colours={["primary-blue"]} />
+              </WorkCard>
+            </WorkGroupCard>
             <WorkGroupCard title="Apps" image="apps.svg">
               <WorkCard
                 image="emissionIQ.png"
@@ -148,73 +187,6 @@ const Home = () => {
               </WorkCard>
             </WorkGroupCard>
 
-            <WorkGroupCard title="Open Source" image="open-source.svg">
-              <WorkCard
-                image="swtools.png"
-                title="SWTools"
-                description="Multi-platform package providing a collection of tools for use in Swift projects."
-                href="https://github.com/matt54633/SWTools">
-                <SkillList skills={["Swift"]} colours={["primary-blue"]} />
-              </WorkCard>
-            </WorkGroupCard>
-
-            <WorkGroupCard title="Sites" image="globe.svg">
-              <WorkCard
-                image="mcmsw.jpg"
-                title="MCMSW"
-                description="Designed, developed and deployed a brand new website and branding package for a local mechanic."
-                href="https://mobilecarmechanic.net">
-                <SkillList
-                  skills={["HTML", "CSS", "JS"]}
-                  colours={["primary-blue", "primary-blue", "primary-blue"]}
-                />
-              </WorkCard>
-              <WorkCard
-                image="bennys.png"
-                title="Benny's Fish and Chips"
-                description="Website developed for a local fish and chip shop. Built using React and Tailwind."
-                href="https://bennysfishandchips.co.uk">
-                <SkillList skills={["React"]} colours={["green"]} />
-              </WorkCard>
-              {/* <WorkCard
-                image="notes.jpg"
-                title="Notes Site"
-                description="Responsive note taker developed using TailwindCSS and Supabase authentication and database."
-                href="https://notes.matt54633.com/">
-                <SkillList
-                  skills={["HTML", "CSS", "JS"]}
-                  colours={["primary-blue", "primary-blue", "pink"]}
-                />
-              </WorkCard> */}
-
-              {/* <div className="flex flex-col justify-between gap-4 lg:gap-0">
-              <SubDomainCard
-                image="gradient.svg"
-                title="Gradient Generator"
-                href="https://gradients.matt54633.com/"
-              />
-
-              <SubDomainCard
-                image="sun.svg"
-                title="Weather"
-                href="https://weather.matt54633.com/"
-              />
-
-              <SubDomainCard image="note.svg" title="Notes" href="https://notes.matt54633.com/" />
-
-              <SubDomainCard
-                image="play.svg"
-                title="Alternate Portfolio"
-                href="https://play.matt54633.com/"
-              />
-
-              <SubDomainCard
-                image="portal.svg"
-                title="Booking Portal"
-                href="https://portal.matt54633.com/"
-              />
-            </div> */}
-            </WorkGroupCard>
           </div>
         </Section>
       </div>
