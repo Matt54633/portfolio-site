@@ -79,9 +79,15 @@ const Home = () => {
         <Section title="Career">
           <div className="flex flex-col gap-4">
             <ExperienceCard
+              company="Software Engineer"
+              jobTitle="ADP"
+              datePeriod="2025 - Current"
+              icon="code.svg"
+            />
+            <ExperienceCard
               company="Associate Software Engineer"
               jobTitle="ADP"
-              datePeriod="2024 - Current"
+              datePeriod="2024 - 2025"
               icon="code.svg"
             />
             <ExperienceCard

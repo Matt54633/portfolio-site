@@ -118,14 +118,28 @@ const CV = () => {
         <div className="mt-7 flex flex-col gap-4">
           <ExperienceCard
             jobTitle="ADP"
-            company="Associate Software Engineer"
-            datePeriod="2024 - Current"
+            company="Software Engineer"
+            datePeriod="2025 - Current"
             icon="code.svg">
             <BulletedList
               items={[
-                "Delivering scalable infrastructure using AWS, supporting continuous integration and deployment of cloud services.",
-                "Building reusable Web Components with TypeScript to support dynamic and accessible user interfaces.",
-                "Developing and maintaining APIs using C#, ensuring secure and efficient data handling for payroll processing."
+                "Delivering full-stack solutions by collaborating with global and cross-functional teams.",
+                "Extending API capabilities with advanced monitoring and analytics, including Splunk dashboarding.",
+                "Developing and maintaining APIs using C# to ensure secure and efficient data handling for payroll processing."
+              ]}
+            />
+          </ExperienceCard>
+          <ExperienceCard
+            jobTitle="ADP"
+            company="Associate Software Engineer"
+            datePeriod="2024 - 2025"
+            icon="code.svg">
+            <BulletedList
+              items={[
+                "Delivered scalable infrastructure using AWS to support the continuous integration and deployment of cloud services.",
+                "Built reusable Web Components with TypeScript to support dynamic and accessible user interfaces.",
+                "Further developed tooling and documentation to enhance team efficiency and knowledge sharing."
+
               ]}
             />
           </ExperienceCard>
