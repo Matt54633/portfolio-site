@@ -69,6 +69,17 @@ const CV = () => {
             icon="cap.svg">
             <SkillList skills={["1st Class Honours"]} colours={[]} />
           </ExperienceCard>
+          <ExperienceCard
+            className="lg:col-span-2"
+            jobTitle="Bournemouth University"
+            company="Subject Achievement Scholarship"
+            datePeriod="2020"
+            icon="cap.svg">
+            <p className="font-medium">
+              Awarded due to demonstrating outstanding commitment to the study through work
+              experience and voluntary work.
+            </p>
+          </ExperienceCard>
 
           <ExperienceCard
             jobTitle="Strode College"
@@ -99,17 +110,6 @@ const CV = () => {
               ]}
               colours={[]}
             />
-          </ExperienceCard>
-          <ExperienceCard
-            className="lg:col-span-2"
-            jobTitle="Bournemouth University"
-            company="Subject Achievement Scholarship"
-            datePeriod="2020"
-            icon="cap.svg">
-            <p className="font-medium">
-              Awarded due to demonstrating outstanding commitment to the study through work
-              experience and voluntary work.
-            </p>
           </ExperienceCard>
         </div>
       </Section>
