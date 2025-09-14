@@ -14,54 +14,16 @@ const CV = () => {
 
       <Section title="About Me">
         <p className="font-medium">
-          As an ambitious and adaptable Software Engineer with professional experience in both
-          corporate and start-up environments, I bring a strong foundation in full-stack
-          development, cloud engineering, and software delivery. Having worked on scalable
-          cloud-based applications and modern web platforms, I thrive on learning new technologies
-          quickly and contributing meaningfully to cross-functional teams.
+          As an ambitious and adaptable Software Engineer with professional experience at both
+          established enterprises and start-ups, I bring expertise in full-stack development, cloud
+          engineering, and software delivery. My experience in building scalable cloud applications
+          and modern web platforms enables me to adapt to new technologies and thrive in
+          cross-functional teams to deliver robust and impactful solutions.
         </p>
       </Section>
 
-      <Section title="Skills">
-        <SkillList
-          skills={[
-            "HTML",
-            "CSS",
-            "JS",
-            "C#",
-            "Swift",
-            "Python",
-            "SQL",
-            "React",
-            "Node.js",
-            "Stencil.js",
-            "SwiftUI",
-            "AWS",
-            "Terraform",
-            "Firebase"
-          ]}
-          colours={[
-            "primary-blue",
-            "primary-blue",
-            "primary-blue",
-            "primary-blue",
-            "primary-blue",
-            "primary-blue",
-            "primary-blue",
-            "green",
-            "green",
-            "green",
-            "green",
-            "red",
-            "red",
-            "red"
-          ]}
-        />
-      </Section>
-
-      <Section title="Education">
+      <Section title="Achievements">
         <div className="mt-7 flex flex-col gap-4">
-          {/* <div className="grid gap-4 lg:grid-cols-2"> */}
           <ExperienceCard
             jobTitle="Bournemouth University"
             company="Software Engineering BSc"
@@ -88,7 +50,6 @@ const CV = () => {
             icon="cap.svg">
             <SkillList skills={["D*D*D*"]} colours={[]} />
           </ExperienceCard>
-          {/* </div> */}
           <ExperienceCard
             className="lg:col-span-2"
             jobTitle="Bucklers Mead Academy"
@@ -123,8 +84,8 @@ const CV = () => {
             icon="code.svg">
             <BulletedList
               items={[
-                "Delivering full-stack solutions by collaborating with global and cross-functional teams.",
-                "Extending API capabilities with advanced monitoring and analytics, including Splunk dashboarding.",
+                "Delivering full-stack multi-country payroll solutions in collaboration with global teams.",
+                "Extending API capabilities with advanced monitoring, remote logging configuration and analytics.",
                 "Developing and maintaining APIs using C# to ensure secure and efficient data handling for payroll processing."
               ]}
             />
@@ -139,7 +100,6 @@ const CV = () => {
                 "Delivered scalable infrastructure using AWS to support the continuous integration and deployment of cloud services.",
                 "Built reusable Web Components with TypeScript to support dynamic and accessible user interfaces.",
                 "Further developed tooling and documentation to enhance team efficiency and knowledge sharing."
-
               ]}
             />
           </ExperienceCard>
@@ -152,12 +112,10 @@ const CV = () => {
               items={[
                 "Engineered cloud-based solutions by utilising AWS to integrate APIs with a proprietary application.",
                 "Completed the development of Node.js applications, enhancing system functionality.",
-                "Led the research, design, and implementation of a Robotic Process Automation system, leveraging AWS infrastructure.",
-                "Revamped internal API documentation, ensuring accuracy and clarity for effective communication.",
+                "Led the research, design, and implementation of a Robotic Process Automation system, leveraging AWS infrastructure."
               ]}
             />
           </ExperienceCard>
-          {/* <div className="grid gap-4 lg:grid-cols-2"> */}
           <ExperienceCard
             jobTitle="Huish MAT"
             company="IT Technician"
@@ -167,7 +125,7 @@ const CV = () => {
               items={[
                 "Collaborated with IT Network Manager across three primary schools.",
                 "Repurposed IT equipment to optimise resource utilisation.",
-                "Provided timely IT support to staff members to resolve queries.",
+                "Provided timely IT support to staff members to resolve queries."
               ]}
             />
           </ExperienceCard>
@@ -179,22 +137,65 @@ const CV = () => {
             icon="code.svg">
             <BulletedList
               items={[
-                "Collaborated with a local school to conceptualise and produce compelling marketing materials and documentation.",
-                "Developed a bespoke CRM system for a local mechanic, streamlining customer management and service tracking."
+                "Collaborated with a local school to produce compelling marketing materials and documentation.",
+                "Developed a bespoke CRM system for a mobile mechanic, streamlining customer management and service tracking."
               ]}
             />
           </ExperienceCard>
-          {/* </div> */}
         </div>
+      </Section>
+
+      <Section title="Skills">
+        <SkillList
+          skills={[
+            "C#",
+            "TypeScript",
+            "JavaScript",
+            "Swift",
+            "Python",
+            "SQL",
+            "HTML",
+            "CSS",
+            "AWS",
+            ".NET",
+            "React",
+            "Web Components",
+            "MSSQL",
+            "Node.js",
+            "Stencil",
+            "Firebase",
+            "Splunk",
+            "Jira"
+          ]}
+          colours={[
+            "primary-blue",
+            "primary-blue",
+            "primary-blue",
+            "primary-blue",
+            "primary-blue",
+            "green",
+            "green",
+            "green",
+            "orange",
+            "orange",
+            "orange",
+            "orange",
+            "orange",
+            "orange",
+            "orange",
+            "orange",
+            "pink",
+            "pink"
+          ]}
+        />
       </Section>
 
       <Section title="Interests">
         <p className="font-medium">
-          Outside of work, I enjoy cooking and trying new recipes with friends and family. I’m
-          passionate about keeping up with emerging technologies, often through building personal
-          projects, exploring new frameworks, and reading technical books. I also remain actively
-          committed to volunteering, a value instilled in me through my time with the Scouting
-          Association.
+          Outside of my work, I enjoy cooking with friends and family and reading books on a wide
+          array of subjects. I’m also passionate about researching emerging technologies, often
+          through building personal projects and using new frameworks. I also remain committed to
+          volunteering, a value instilled in me during my time with the Scouting Association.
         </p>
       </Section>
 
