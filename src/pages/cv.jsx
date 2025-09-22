@@ -29,7 +29,7 @@ const CV = () => {
             company="Software Engineering BSc"
             datePeriod="2020 - 2024"
             icon="cap.svg">
-            <SkillList skills={["1st Class Honours"]} colours={[]} />
+            <p className="font-medium">1st Class Honours.</p>
           </ExperienceCard>
           <ExperienceCard
             className="lg:col-span-2"
@@ -48,7 +48,7 @@ const CV = () => {
             company="Computing and IT BTEC"
             datePeriod="2018 - 2020"
             icon="cap.svg">
-            <SkillList skills={["D*D*D*"]} colours={[]} />
+            <p className="font-medium">D*D*D*.</p>
           </ExperienceCard>
           <ExperienceCard
             className="lg:col-span-2"
@@ -56,21 +56,10 @@ const CV = () => {
             company="GCSE"
             datePeriod="2013 - 2018"
             icon="cap.svg">
-            <SkillList
-              skills={[
-                "Computer Science - 7",
-                "Mathematics - 7",
-                "Physics - 7",
-                "Chemistry - 6",
-                "Biology - 6",
-                "English Language - 5",
-                "English Literature - 4",
-                "French - 5",
-                "Product Design - C",
-                "ECDL - D*"
-              ]}
-              colours={[]}
-            />
+            <p class="font-medium">
+              Computer Science, Mathematics, Triple Science, English Language and Literature, French
+              and Product Design.
+            </p>
           </ExperienceCard>
         </div>
       </Section>
