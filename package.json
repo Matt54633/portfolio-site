@@ -9,7 +9,7 @@
     "react-router-dom": "^7.5.2",
     "react-scripts": "5.0.1",
     "react-scroll": "^1.9.0",
-    "supabase": "^1.162.4",
+    "supabase": "^2.72.8",
     "web-vitals": "^2.1.4"
   },
   "devDependencies": {
