@@ -3,7 +3,7 @@ import PrimaryButton from "./primaryButton";
 const Hero = () => {
   return (
     <section className="mx-0.5 my-[3rem] flex w-full flex-col md:my-[6rem] lg:my-[7.5rem]">
-      <div className="flex flex-row items-center justify-between gap-4 md:mt-0">
+      <div className="flex flex-row items-center justify-between gap-4 mr-2 md:mt-0">
         <div className="flex flex-col gap-4 md:gap-8">
           <img
             src="/heroImageMedium.svg"
