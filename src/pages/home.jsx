@@ -132,7 +132,7 @@ const Home = () => {
                 image="mcmsw-crm.png"
                 title="MCMSW CRM"
                 description="Bespoke customer relationship management system with automated document generation and invoicing. "
-                href="https://mobilecarmechanic.net">
+                >
                 <SkillList
                   skills={["React", "Firebase"]}
                   colours={["green", "red"]}
@@ -142,7 +142,7 @@ const Home = () => {
                 image="bennys.png"
                 title="Benny's Fish and Chips"
                 description="Website developed for a local fish and chip shop. Built using React and Tailwind."
-                href="https://bennysfishandchips.co.uk">
+                >
                 <SkillList skills={["React"]} colours={["green"]} />
               </WorkCard>
             </WorkGroupCard>
@@ -161,42 +161,42 @@ const Home = () => {
                 image="emissionIQ.png"
                 title="EmissionIQ"
                 description="Gamified iOS app for tracking carbon emissions. Level up, achieve trophies and more."
-                href="https://apps.apple.com/gb/app/emissioniq/id6477887658">
+                >
                 <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="budgets.png"
                 title="Clear Budgets"
                 description="Budgeting iOS app for tracking expenses, managing subscriptions and more."
-                href="https://apps.apple.com/gb/app/clear-budgets/id6503365476">
+                >
                 <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="weather.jpeg"
                 title="54633°"
                 description="Hyperlocal iOS weather app for iOS, iPadOS and MacOS. Built using SwiftUI and the Apple Weather API."
-                href="https://apps.apple.com/gb/app/54633/id6468419990/">
+                >
                 <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="personal-bests.jpeg"
                 title="Personal Bests"
                 description="Progress tracking iOS app for tracking weight lifting. Built using Swift and the SwiftData framework."
-                href="https://apps.apple.com/gb/app/personal-bests/id6468835590/">
+                >
                 <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="shaker-gradient.jpg"
                 title="Gradient Shaker"
                 description="Shake to Generate! - Gradient generator for iOS. Built using Swift and SwiftUI with iCloud Sync."
-                href="https://apps.apple.com/gb/app/gradient-shaker/id6499209609">
+                >
                 <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
               <WorkCard
                 image="speed0.jpg"
                 title="SPEED0"
                 description="Route between locations, track average speed and change tracks. Built using Swift and SwiftUI."
-                href="https://apps.apple.com/gb/app/speed0/id6469321016">
+                >
                 <SkillList skills={["Swift", "SwiftUI"]} colours={["primary-blue", "green"]} />
               </WorkCard>
             </WorkGroupCard>
